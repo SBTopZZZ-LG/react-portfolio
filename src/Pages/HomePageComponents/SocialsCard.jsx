@@ -36,6 +36,7 @@ const SocialsCard = () => {
 					</a>
 
 					<a
+						className="svg"
 						href="https://www.instagram.com/not_professor_oof"
 						target="_blank"
 						rel="noreferrer"
@@ -44,7 +45,7 @@ const SocialsCard = () => {
 					</a>
 
 					<a
-						className="left-icon"
+						className="left-icon svg"
 						href="https://github.com/SBTopZZZ-LG"
 						target="_blank"
 						rel="noreferrer"
@@ -63,11 +64,11 @@ const SocialsCard = () => {
 			</center>
 			<VGap gap={37} />
 
-			<span style={{ color: "#858585" }}>
+			<span className="white" style={{ color: "#858585" }}>
 				Stay With Me
 			</span>
 			<VGap gap={5} />
-			<span style={{ fontSize: "20px" }}>
+			<span className="white" style={{ fontSize: "20px" }}>
 				Profiles
 			</span>
 		</Card >

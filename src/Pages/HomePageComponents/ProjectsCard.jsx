@@ -27,9 +27,7 @@ const ProjectsCard = () => {
 				/>
 			</center>
 
-			<span style={{
-				fontSize: "20px",
-			}}>
+			<span className="svg" style={{ fontSize: "20px" }}>
 				Projects
 			</span>
 		</Card>

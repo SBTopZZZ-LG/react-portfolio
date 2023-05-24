@@ -22,16 +22,14 @@ const EducationCard = () => {
 			<center style={{
 				width: "100%",
 			}}>
-				<School style={{
+				<School className="svg" style={{
 					width: "65px",
 					height: "52.67px",
 				}} />
 			</center>
 			<VGap gap={37} />
 
-			<span style={{
-				fontSize: "20px",
-			}}>
+			<span className="white" style={{ fontSize: "20px" }}>
 				Education
 			</span>
 		</Card>

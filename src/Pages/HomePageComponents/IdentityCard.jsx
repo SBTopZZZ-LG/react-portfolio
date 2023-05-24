@@ -15,10 +15,10 @@ const IdentityCard = () => {
 
 			<div>
 				<VGap gap={16} />
-				<span style={{ color: "#858585" }}>A Full Stack Developer</span>
+				<span className="white" style={{ color: "#858585" }}>A Full Stack Developer</span>
 				<VGap gap={3} />
 
-				<span style={{ fontSize: "31px" }}>
+				<span className="white" style={{ fontSize: "31px" }}>
 					Saumitra
 					<br />
 					Topinkatti.

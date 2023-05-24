@@ -8,8 +8,30 @@
 	font-weight: bold;
 	margin: 8.5px;
 	padding: 35px;
+	transition: 300ms ease-out;
+}
+
+.card:hover {
+	background: rgb(219, 219, 219);
+	transition: 300ms ease-out;
+}
+
+/* Texts */
+.card:hover .white {
+	color: black;
+	transition: 300ms ease-out;
+}
+
+/* Images */
+.card:hover .svg {
+	filter: invert(100%);
+	transition: 300ms ease-out;
 }
 
 .card .card-2 {
 	background: linear-gradient(135deg, #383838 0%, rgba(72, 72, 72, 0) 100%);
+}
+
+.card:hover .card-2 {
+	background: transparent;
 }

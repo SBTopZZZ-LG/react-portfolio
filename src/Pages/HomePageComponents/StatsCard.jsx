@@ -27,6 +27,7 @@ const StatsCard = () => {
 			>
 				<VGap gap={12} />
 				<span
+					className="svg"
 					style={{
 						fontSize: "40px",
 						fontWeight: "600"
@@ -36,7 +37,7 @@ const StatsCard = () => {
 				</span>
 				<VGap gap={26} />
 
-				<span style={{ color: "#858585" }}>
+				<span className="svg" style={{ color: "#858585" }}>
 					Years Of Experience
 				</span>
 			</Card>
@@ -56,6 +57,7 @@ const StatsCard = () => {
 			>
 				<VGap gap={12} />
 				<span
+					className="svg"
 					style={{
 						fontSize: "40px",
 						fontWeight: "600"
@@ -65,7 +67,7 @@ const StatsCard = () => {
 				</span>
 				<VGap gap={26} />
 
-				<span style={{ color: "#858585" }}>
+				<span className="svg" style={{ color: "#858585" }}>
 					Total Projects
 				</span>
 			</Card>
@@ -85,6 +87,7 @@ const StatsCard = () => {
 			>
 				<VGap gap={12} />
 				<span
+					className="svg"
 					style={{
 						fontSize: "40px",
 						fontWeight: "600"
@@ -94,7 +97,7 @@ const StatsCard = () => {
 				</span>
 				<VGap gap={34} />
 
-				<span style={{ color: "#858585" }}>
+				<span className="svg" style={{ color: "#858585" }}>
 					Certifications
 				</span>
 			</Card>
