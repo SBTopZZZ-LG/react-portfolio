@@ -1,0 +1,12 @@
+.grid-container {
+	column-gap: 30.53px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	row-gap: 12.21px;
+	width: min-content;
+}
+
+.left-icon {
+	margin-right: 10px;
+}

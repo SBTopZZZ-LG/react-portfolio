@@ -1,0 +1,15 @@
+.card {
+	background: linear-gradient(135deg, #262626 0%, rgba(72, 72, 72, 0) 100%);
+	border-radius: 25px;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	font-size: 14.5px;
+	font-weight: bold;
+	margin: 8.5px;
+	padding: 35px;
+}
+
+.card .card-2 {
+	background: linear-gradient(135deg, #383838 0%, rgba(72, 72, 72, 0) 100%);
+}
