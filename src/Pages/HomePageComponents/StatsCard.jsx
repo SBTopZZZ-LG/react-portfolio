@@ -14,11 +14,12 @@ const StatsCard = () => {
 		>
 			{/* Years Of Experience */}
 			<Card
-				width={140.88 - 23.935 * 2}
 				height={161 - 17.935 * 2}
 				style={{
 					alignItems: "center",
+					flexBasis: "0",
 					flexDirection: "column",
+					flexGrow: "1",
 					margin: "4.065px",
 					padding: "17.935px 23.935px",
 					textAlign: "center",
@@ -42,11 +43,12 @@ const StatsCard = () => {
 
 			{/* Total Projects */}
 			<Card
-				width={140.88 - 23.935 * 2}
 				height={161 - 17.935 * 2}
 				style={{
 					alignItems: "center",
+					flexBasis: "0",
 					flexDirection: "column",
+					flexGrow: "1",
 					margin: "4.065px",
 					padding: "17.935px 23.935px",
 					textAlign: "center",
@@ -70,11 +72,12 @@ const StatsCard = () => {
 
 			{/* Certifications */}
 			<Card
-				width={140.88 - 23.935 * 2}
 				height={161 - 17.935 * 2}
 				style={{
 					alignItems: "center",
+					flexBasis: "0",
 					flexDirection: "column",
+					flexGrow: "1",
 					margin: "4.065px",
 					padding: "17.935px 23.935px",
 					textAlign: "center",
