@@ -6,8 +6,10 @@ import SocialsCard from "./HomePageComponents/SocialsCard";
 import StatsCard from "./HomePageComponents/StatsCard";
 import EducationCard from "./HomePageComponents/EducationCard";
 
-import { HGap } from "../Components/Gap";
 import ProjectsCard from "./HomePageComponents/ProjectsCard";
+import MarqueeCard from "./HomePageComponents/MarqueeCard";
+
+import { HGap } from "../Components/Gap";
 
 const HomePage = () => {
 	return (
@@ -24,6 +26,9 @@ const HomePage = () => {
 			<StatsCard />
 			<EducationCard />
 			<ProjectsCard />
+			<HGap gap="100%" />
+
+			<MarqueeCard />
 		</div>
 	);
 };
