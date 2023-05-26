@@ -34,7 +34,7 @@ const MarqueeCard = ({
 			style={{
 				flexDirection: "column",
 				justifyContent: "center",
-				padding: "11px 0px"
+				padding: "14px 0px"
 			}}
 		>
 			<Marquee
