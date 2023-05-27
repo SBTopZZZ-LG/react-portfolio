@@ -15,7 +15,7 @@ const MarqueeCard = ({
 
 	const marqueeContent = strings.map((string, index) => (
 		<React.Fragment key={index}>
-			<span>{string}</span>
+			<span className="white">{string}</span>
 			{index !== strings.length - 1 && (
 				<div style={{
 					display: "inline-flex",
