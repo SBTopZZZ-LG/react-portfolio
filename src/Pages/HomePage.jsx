@@ -12,8 +12,6 @@ const HomePage = () => {
 	const [gridBreak, setGridBreak] = useState(0);
 
 	function handleResize(ev) {
-		console.log(window.innerWidth);
-
 		if (window.innerWidth < 600)
 			setGridBreak(2);
 		else if (window.innerWidth < 999)
@@ -25,8 +23,10 @@ const HomePage = () => {
 	useEffect(() => {
 		if (window.innerWidth < 600)
 			setGridBreak(2);
-		if (window.innerWidth < 999)
+		else if (window.innerWidth < 999)
 			setGridBreak(1);
+		else
+			setGridBreak(0);
 
 		window.addEventListener("resize", handleResize);
 		return () => window.removeEventListener("resize", handleResize);

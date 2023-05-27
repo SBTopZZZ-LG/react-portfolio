@@ -2,6 +2,7 @@ import './App.css';
 
 import { VGap } from "./Components/Gap";
 import Navbar2 from "./Components/NavBar";
+import FooterBar from "./Components/FooterBar";
 
 import HomePage from "./Pages/HomePage";
 
@@ -16,6 +17,9 @@ function App() {
       <VGap gap={20} />
 
       <HomePage />
+      <VGap gap={20} />
+
+      <FooterBar />
     </div>
   );
 }
