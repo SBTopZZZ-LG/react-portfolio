@@ -85,7 +85,6 @@ const StatsCard = () => {
 						flexBasis: "0",
 						flexGrow: "1",
 						color: "#858585",
-						marginBottom: "11.5px",
 					}}
 				>
 					Total Projects
@@ -126,7 +125,6 @@ const StatsCard = () => {
 						flexBasis: "0",
 						flexGrow: "1",
 						color: "#858585",
-						marginBottom: "11.5px",
 					}}
 				>
 					Certifications
