@@ -18,10 +18,10 @@ const HomePage = () => {
 			<div style={{ width: "984px" }}>
 				<div style={{
 					display: "grid",
-					gridTemplateColumns: "47.35% 25% 25%",
-					gridTemplateRows: "238px 191px 60px",
-					columnGap: "12px",
-					rowGap: "12px",
+					gridTemplateColumns: "1.75fr 1fr 1fr",
+					gridTemplateRows: "238px 191px 1fr",
+					columnGap: "15px",
+					rowGap: "15px",
 				}}>
 					<IdentityCard key="identity-card" />
 					<AboutMeCard key="about-me-card" />
