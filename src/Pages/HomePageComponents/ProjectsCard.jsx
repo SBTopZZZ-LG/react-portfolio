@@ -7,8 +7,8 @@ import Illustration from "../../Assets/Images/Projects.svg";
 const ProjectsCard = () => {
 	return (
 		<Card
-			width={238 - Padding * 2}
-			height={191 - Padding * 2}
+			width="auto"
+			height="auto"
 			style={{
 				alignItems: "start",
 				flexDirection: "column",

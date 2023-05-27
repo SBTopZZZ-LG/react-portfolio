@@ -30,11 +30,11 @@ const MarqueeCard = ({
 
 	return (
 		<Card
-			width={984}
+			width="auto"
 			style={{
 				flexDirection: "column",
 				justifyContent: "center",
-				padding: "14px 0px"
+				padding: "14px 10px"
 			}}
 		>
 			<Marquee speed={80}>

@@ -10,20 +10,20 @@ import "./NavBar.css";
 
 const Navbar2 = () => {
 	return (
-		<nav className="navbar">
+		<nav>
 			<div>
-				<span className="logo">SBTOPZZZ</span>
+				<span className="navbar-logo">SBTOPZZZ</span>
 			</div>
 
 			<div className="right">
-				<Phone className="icon" />
+				<Phone className="navbar-icon" />
 				<HGap gap={14} />
 
-				<span className="text">+91 91084 24029</span>
+				<span className="navbar-text">+91 91084 24029</span>
 				<HGap gap={35} />
 
 				<IconButton color="inherit">
-					<Menu className="icon" />
+					<Menu className="navbar-icon" />
 				</IconButton>
 			</div>
 		</nav>

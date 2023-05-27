@@ -13,8 +13,8 @@ import "./SocialsCard.css";
 const SocialsCard = () => {
 	return (
 		<Card
-			width={238 - Padding * 2}
-			height={238 - Padding * 2}
+			width="auto"
+			height="auto"
 			style={{
 				alignItems: "start",
 				flexDirection: "column",

@@ -8,26 +8,38 @@ import EducationCard from "./HomePageComponents/EducationCard";
 import ProjectsCard from "./HomePageComponents/ProjectsCard";
 import MarqueeCard from "./HomePageComponents/MarqueeCard";
 
-import { HGap } from "../Components/Gap";
+import { VGap } from "../Components/Gap";
 
 const HomePage = () => {
 	return (
 		<div style={{
 			display: "flex",
-			flexFlow: "wrap",
-			justifyContent: "center"
+			justifyContent: "center",
+			width: "100%",
 		}}>
-			<IdentityCard />
-			<AboutMeCard />
-			<SocialsCard />
-			<HGap gap="100%" />
+			<div style={{
+				width: "76.875%",
+				maxWidth: "984px",
+			}}>
+				<div style={{
+					display: "grid",
+					gridTemplateColumns: "47.35% 25% 25%",
+					gridTemplateRows: "55.47% 42.52%",
+					columnGap: "13px",
+					rowGap: "13px",
+				}}>
+					<IdentityCard key="identity-card" />
+					<AboutMeCard key="about-me-card" />
+					<SocialsCard key="socials-card" />
 
-			<StatsCard />
-			<EducationCard />
-			<ProjectsCard />
-			<HGap gap="100%" />
+					<StatsCard key="stats-card" />
+					<EducationCard key="education-card" />
+					<ProjectsCard key="projects-card" />
+				</div>
+				<VGap gap={15} />
 
-			<MarqueeCard />
+				<MarqueeCard key="marquee-card" />,
+			</div>
 		</div>
 	);
 };

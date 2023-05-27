@@ -27,31 +27,13 @@ nav .right {
 	z-index: 100;
 }
 
-.navbar {
-	position: sticky;
-	top: 0;
-	height: 60px;
-	background-color: #161616;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 0 20px;
-}
-
-.navbar .right {
-	display: flex;
-	align-items: center;
-}
-
 .navbar-text {
-	font-size: 28px;
+	font-size: 26px;
 	font-family: "Bebas Neue";
-	font-weight: 600;
 	color: white;
 }
 
 .navbar-icon {
 	height: 20px;
 	color: white;
-	margin-right: 10px;
 }

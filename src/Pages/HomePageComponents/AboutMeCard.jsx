@@ -1,6 +1,6 @@
 import React from "react";
 
-import Card, { Padding } from "../../Components/Card";
+import Card from "../../Components/Card";
 import { VGap } from "../../Components/Gap";
 
 import Signature from "../../Assets/Images/signature.svg";
@@ -8,8 +8,8 @@ import Signature from "../../Assets/Images/signature.svg";
 const AboutMeCard = () => {
 	return (
 		<Card
-			width={238 - Padding * 2}
-			height={238 - Padding * 2}
+			width="auto"
+			height="auto"
 			style={{
 				alignItems: "start",
 				flexDirection: "column",

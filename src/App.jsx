@@ -7,7 +7,10 @@ import HomePage from "./Pages/HomePage";
 
 function App() {
   return (
-    <div>
+    <div style={{
+      display: "flex",
+      flexDirection: "column",
+    }}>
       <Navbar2 />
       <VGap gap={20} />
 
