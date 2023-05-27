@@ -4,7 +4,9 @@ import Card, { Padding } from "../../Components/Card";
 
 import Illustration from "../../Assets/Images/Projects.svg";
 
-const ProjectsCard = () => {
+const ProjectsCard = ({
+	style = {},
+}) => {
 	return (
 		<Card
 			width="auto"
@@ -14,6 +16,7 @@ const ProjectsCard = () => {
 				flexDirection: "column",
 				justifyContent: "end",
 				textAlign: "left",
+				...style,
 			}}
 		>
 			<center style={{

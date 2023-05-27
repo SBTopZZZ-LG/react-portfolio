@@ -2,13 +2,19 @@ import React from "react";
 
 import Card from "../../Components/Card";
 
-const StatsCard = () => {
+const StatsCard = ({
+	style = {},
+	column = false,
+}) => {
 	return (
 		<Card
 			width="auto"
 			height="auto"
 			style={{
+				display: "flex",
 				padding: "10px",
+				...(column ? { flexDirection: "column" } : {}),
+				...style,
 			}}
 		>
 			{/* Years Of Experience */}
@@ -23,6 +29,7 @@ const StatsCard = () => {
 					margin: "4.065px",
 					padding: "30px 23.935px",
 					textAlign: "center",
+					...(column ? { width: "auto" } : {}),
 				}}
 			>
 				<span
@@ -41,9 +48,11 @@ const StatsCard = () => {
 					className="svg"
 					style={{
 						alignItems: "end",
-						display: "flex",
+						display: "block",
 						flexBasis: "0",
 						flexGrow: "1",
+						lineHeight: "1em",
+						maxHeight: "2em",
 						color: "#858585",
 					}}
 				>
@@ -63,6 +72,7 @@ const StatsCard = () => {
 					margin: "4.065px",
 					padding: "30px 23.935px",
 					textAlign: "center",
+					...(column ? { width: "auto" } : {}),
 				}}
 			>
 				<span
@@ -84,6 +94,8 @@ const StatsCard = () => {
 						display: "flex",
 						flexBasis: "0",
 						flexGrow: "1",
+						lineHeight: "1em",
+						maxHeight: "2em",
 						color: "#858585",
 					}}
 				>
@@ -103,6 +115,7 @@ const StatsCard = () => {
 					margin: "4.065px",
 					padding: "30px 23.935px",
 					textAlign: "center",
+					...(column ? { width: "auto" } : {}),
 				}}
 			>
 				<span
@@ -124,6 +137,8 @@ const StatsCard = () => {
 						display: "flex",
 						flexBasis: "0",
 						flexGrow: "1",
+						lineHeight: "1em",
+						maxHeight: "2em",
 						color: "#858585",
 					}}
 				>

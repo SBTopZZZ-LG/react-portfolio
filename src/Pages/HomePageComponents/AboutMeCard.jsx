@@ -1,11 +1,13 @@
 import React from "react";
 
 import Card from "../../Components/Card";
-import { VGap } from "../../Components/Gap";
+import { VMGap } from "../../Components/Gap";
 
 import Signature from "../../Assets/Images/signature.svg";
 
-const AboutMeCard = () => {
+const AboutMeCard = ({
+	style = {},
+}) => {
 	return (
 		<Card
 			width="auto"
@@ -15,32 +17,36 @@ const AboutMeCard = () => {
 				flexDirection: "column",
 				justifyContent: "end",
 				textAlign: "left",
+				...style,
 			}}
 		>
-			<VGap gap={16} />
-			<center style={{
-				width: "100%",
-			}}>
-				<img
-					className="svg"
-					src={Signature}
-					alt="Signature"
-					width="148px"
-					height="82px"
-					style={{
-						fill: "red",
-					}}
-				/>
-			</center>
-			<VGap gap={28} />
+			<VMGap
+				gap={16}
+				style={{
+					width: "100%",
+				}}
+			>
+				<center>
+					<img
+						className="svg"
+						src={Signature}
+						alt="Signature"
+						width="148px"
+						height="82px"
+					/>
+				</center>
+			</VMGap>
 
-			<span className="white" style={{ color: "#858585" }}>
-				More About Me
-			</span>
-			<VGap gap={5} />
-			<span className="white" style={{ fontSize: "20px" }}>
-				Credentials
-			</span>
+			<VMGap gap={28}>
+				<span className="white" style={{ color: "#858585" }}>
+					More About Me
+				</span>
+			</VMGap>
+			<VMGap gap={5}>
+				<span className="white" style={{ fontSize: "20px" }}>
+					Credentials
+				</span>
+			</VMGap>
 		</Card>
 	);
 };

@@ -10,7 +10,9 @@ import Twitter from "../../Assets/Images/Twitter.svg";
 
 import "./SocialsCard.css";
 
-const SocialsCard = () => {
+const SocialsCard = ({
+	style = {},
+}) => {
 	return (
 		<Card
 			width="auto"
@@ -20,6 +22,7 @@ const SocialsCard = () => {
 				flexDirection: "column",
 				justifyContent: "end",
 				textAlign: "left",
+				...style,
 			}}
 		>
 			<center style={{

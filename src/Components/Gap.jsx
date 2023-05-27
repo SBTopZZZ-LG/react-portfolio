@@ -15,3 +15,37 @@ export const HGap = ({ gap = 0 }) => {
 		}}></div>
 	);
 };
+
+export const VMGap = ({
+	gap = 0,
+	children,
+	style = {},
+}) => {
+	return (
+		<div style={{
+			width: "max-content",
+			height: "max-content",
+			marginTop: (typeof gap === "string" ? gap : `${gap}px`),
+			...style,
+		}}>
+			{children}
+		</div>
+	);
+};
+
+export const HMGap = ({
+	gap = 0,
+	children,
+	style = {},
+}) => {
+	return (
+		<div style={{
+			width: "max-content",
+			height: "max-content",
+			marginLeft: (typeof gap === "string" ? gap : `${gap}px`),
+			...style,
+		}}>
+			{children}
+		</div>
+	);
+};

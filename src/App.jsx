@@ -10,6 +10,7 @@ function App() {
     <div style={{
       display: "flex",
       flexDirection: "column",
+      width: "100%",
     }}>
       <Navbar2 />
       <VGap gap={20} />

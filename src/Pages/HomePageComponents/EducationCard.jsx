@@ -6,7 +6,9 @@ import {
 import Card, { Padding } from "../../Components/Card";
 import { VGap } from "../../Components/Gap";
 
-const EducationCard = () => {
+const EducationCard = ({
+	style = {},
+}) => {
 	return (
 		<Card
 			width="auto"
@@ -16,6 +18,7 @@ const EducationCard = () => {
 				flexDirection: "column",
 				justifyContent: "end",
 				textAlign: "left",
+				...style,
 			}}
 		>
 			<VGap gap={18} />
