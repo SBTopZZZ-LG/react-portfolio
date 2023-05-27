@@ -8,8 +8,6 @@ import EducationCard from "./HomePageComponents/EducationCard";
 import ProjectsCard from "./HomePageComponents/ProjectsCard";
 import MarqueeCard from "./HomePageComponents/MarqueeCard";
 
-import { VGap } from "../Components/Gap";
-
 const HomePage = () => {
 	return (
 		<div style={{
@@ -17,16 +15,13 @@ const HomePage = () => {
 			justifyContent: "center",
 			width: "100%",
 		}}>
-			<div style={{
-				width: "76.875%",
-				maxWidth: "984px",
-			}}>
+			<div style={{ width: "984px" }}>
 				<div style={{
 					display: "grid",
 					gridTemplateColumns: "47.35% 25% 25%",
-					gridTemplateRows: "55.47% 42.52%",
-					columnGap: "13px",
-					rowGap: "13px",
+					gridTemplateRows: "238px 191px 60px",
+					columnGap: "12px",
+					rowGap: "12px",
 				}}>
 					<IdentityCard key="identity-card" />
 					<AboutMeCard key="about-me-card" />
@@ -38,13 +33,9 @@ const HomePage = () => {
 
 					<MarqueeCard
 						key="marquee-card"
-						style={{
-							gridColumn: "1 / 4",
-						}}
+						style={{ gridColumn: "1 / 4" }}
 					/>
 				</div>
-				<VGap gap={15} />
-
 			</div>
 		</div>
 	);
