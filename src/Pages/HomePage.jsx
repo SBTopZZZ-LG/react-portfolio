@@ -35,10 +35,16 @@ const HomePage = () => {
 					<StatsCard key="stats-card" />
 					<EducationCard key="education-card" />
 					<ProjectsCard key="projects-card" />
+
+					<MarqueeCard
+						key="marquee-card"
+						style={{
+							gridColumn: "1 / 4",
+						}}
+					/>
 				</div>
 				<VGap gap={15} />
 
-				<MarqueeCard key="marquee-card" />,
 			</div>
 		</div>
 	);

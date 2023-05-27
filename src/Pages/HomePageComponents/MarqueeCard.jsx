@@ -10,6 +10,7 @@ import "./MarqueeCard.css";
 
 const MarqueeCard = ({
 	strings = Words,
+	style = {},
 }) => {
 	const dotDistance = 15;
 
@@ -34,7 +35,8 @@ const MarqueeCard = ({
 			style={{
 				flexDirection: "column",
 				justifyContent: "center",
-				padding: "14px 10px"
+				padding: "14px 10px",
+				...style,
 			}}
 		>
 			<Marquee speed={80}>
