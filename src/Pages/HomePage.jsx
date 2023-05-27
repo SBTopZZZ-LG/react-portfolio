@@ -5,7 +5,6 @@ import AboutMeCard from "./HomePageComponents/AboutMeCard";
 import SocialsCard from "./HomePageComponents/SocialsCard";
 import StatsCard from "./HomePageComponents/StatsCard";
 import EducationCard from "./HomePageComponents/EducationCard";
-
 import ProjectsCard from "./HomePageComponents/ProjectsCard";
 import MarqueeCard from "./HomePageComponents/MarqueeCard";
 

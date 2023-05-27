@@ -2,6 +2,7 @@ import React from "react";
 
 import Card, { Padding } from "../../Components/Card";
 import { HGap, VGap } from "../../Components/Gap";
+
 import Avatar from "../../Assets/Images/picture.png";
 
 const IdentityCard = () => {

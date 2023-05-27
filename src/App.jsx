@@ -1,6 +1,8 @@
 import './App.css';
+
 import { VGap } from "./Components/Gap";
 import Navbar2 from "./Components/NavBar";
+
 import HomePage from "./Pages/HomePage";
 
 function App() {

@@ -1,12 +1,12 @@
 import React from 'react';
+import Marquee from "react-fast-marquee";
 
 import { HGap } from "../../Components/Gap";
+import Card from "../../Components/Card";
 
 import Words from "../../Assets/Datasets/words.json";
 
 import "./MarqueeCard.css";
-import Card from "../../Components/Card";
-import Marquee from "react-fast-marquee";
 
 const MarqueeCard = ({
 	strings = Words,
@@ -37,9 +37,7 @@ const MarqueeCard = ({
 				padding: "14px 0px"
 			}}
 		>
-			<Marquee
-				speed={80}
-			>
+			<Marquee speed={80}>
 				<div className="marquee-content">
 					{marqueeContent}
 				</div>
