@@ -12,19 +12,6 @@ const Navbar2 = ({
 	onMenuClick = undefined,
 }) => {
 	const [showMenu, setShowMenu] = useState(false);
-	const [showShadow, setShowShadow] = useState(false);
-
-	function handleScroll(ev) {
-		setShowShadow(window.scrollY > 5);
-	}
-
-	useEffect(() => {
-		if (window.scrollY > 5)
-			setShowShadow(true);
-
-		document.addEventListener("scroll", handleScroll);
-		return () => document.removeEventListener("scroll", handleScroll);
-	}, []);
 
 	useEffect(() => {
 		if (onMenuClick !== undefined)
@@ -35,7 +22,7 @@ const Navbar2 = ({
 	}, [onMenuClick, showMenu]);
 
 	return (
-		<nav className={`sticky ${showShadow && "shadow"}`}>
+		<nav className="sticky">
 			<div>
 				<span className="navbar-logo prevent-select">SBTOPZZZ</span>
 			</div>
