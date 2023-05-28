@@ -19,19 +19,23 @@ function App() {
         minHeight: "100%",
         marginBottom: "-204px",
       }}>
+        {/* NavBar */}
         <Navbar2 onMenuClick={setShowMenu} />
         {showMenu && <MenuOverlay paddingTop="60px" />}
-
         <VGap gap={100} />
+
+        {/* Page content */}
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<HomePage />} />
           </Routes>
         </BrowserRouter>
 
-        <VGap gap={204 + 15} />
+        {/* Don't ask me wtf this is, but don't remove Lmao */}
+        <VGap gap={204 + 60} />
       </div>
 
+      {/* Footer */}
       <FooterBar />
     </div >
   );
