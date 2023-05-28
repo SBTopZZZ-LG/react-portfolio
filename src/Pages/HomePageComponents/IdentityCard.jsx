@@ -30,12 +30,16 @@ const IdentityCard = ({
 					height: "100%",
 				}}
 			>
-				<div>
-					<VMGap gap={16}>
+				<div style={{
+					display: "flex",
+					flexDirection: "column",
+					justifyContent: "center",
+					height: "100%",
+				}}>
+					<VMGap gap={column ? 15 : 0}>
 						<span className="white" style={{ color: "#858585" }}>A Full Stack Developer</span>
 					</VMGap>
-
-					<VMGap gap={3}>
+					<VMGap gap={5}>
 						<span className="white" style={{ fontSize: "31px" }}>
 							Saumitra
 							<br />
