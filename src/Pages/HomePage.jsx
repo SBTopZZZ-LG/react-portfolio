@@ -9,30 +9,30 @@ import ProjectsCard from "./HomePageComponents/ProjectsCard";
 import MarqueeCard from "./HomePageComponents/MarqueeCard";
 
 const HomePage = () => {
-	const [gridBreak, setGridBreak] = useState(0);
+	const [sizeState, setSizeState] = useState(0);
 
 	function handleResize(ev) {
 		if (window.innerWidth < 600)
-			setGridBreak(2);
+			setSizeState(2);
 		else if (window.innerWidth < 999)
-			setGridBreak(1);
+			setSizeState(1);
 		else
-			setGridBreak(0);
+			setSizeState(0);
 	}
 
 	useEffect(() => {
 		if (window.innerWidth < 600)
-			setGridBreak(2);
+			setSizeState(2);
 		else if (window.innerWidth < 999)
-			setGridBreak(1);
+			setSizeState(1);
 		else
-			setGridBreak(0);
+			setSizeState(0);
 
 		window.addEventListener("resize", handleResize);
 		return () => window.removeEventListener("resize", handleResize);
 	}, []);
 
-	if (gridBreak === 2)
+	if (sizeState === 2)
 		return (
 			<div style={{
 				display: "flex",
@@ -91,7 +91,7 @@ const HomePage = () => {
 			</div>
 		);
 
-	if (gridBreak === 1)
+	if (sizeState === 1)
 		return (
 			<div style={{
 				display: "flex",
