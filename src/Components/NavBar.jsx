@@ -24,7 +24,7 @@ const Navbar2 = ({
 	return (
 		<nav className="sticky">
 			<div>
-				<span className="navbar-logo prevent-select">SBTOPZZZ</span>
+				<span className="navbar-logo prevent-select">Saumitra Topinkatti</span>
 			</div>
 
 			<div className="right">
