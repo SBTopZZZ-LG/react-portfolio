@@ -14,7 +14,7 @@ const HomePage = () => {
 	function handleResize(ev) {
 		if (window.innerWidth < 700)
 			setSizeState(2);
-		else if (window.innerWidth < 1100)
+		else if (window.innerWidth < 1130)
 			setSizeState(1);
 		else
 			setSizeState(0);
@@ -23,7 +23,7 @@ const HomePage = () => {
 	useEffect(() => {
 		if (window.innerWidth < 700)
 			setSizeState(2);
-		else if (window.innerWidth < 1100)
+		else if (window.innerWidth < 1130)
 			setSizeState(1);
 		else
 			setSizeState(0);
