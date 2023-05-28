@@ -28,7 +28,7 @@ const SocialsCard = ({
 			<center style={{
 				width: "100%",
 			}}>
-				<div className="grid-container">
+				<div className="grid-container prevent-select">
 					<a
 						className="left-icon"
 						href="https://www.linkedin.com/in/saumitra-topinkatti-45a577208"

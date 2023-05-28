@@ -23,6 +23,7 @@ const ProjectsCard = ({
 				width: "100%",
 			}}>
 				<img
+					className="prevent-select"
 					src={Illustration}
 					alt="Projects"
 					width="100px"

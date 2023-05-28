@@ -28,7 +28,7 @@ const AboutMeCard = ({
 			>
 				<center>
 					<img
-						className="svg"
+						className="svg prevent-select"
 						src={Signature}
 						alt="Signature"
 						width="148px"

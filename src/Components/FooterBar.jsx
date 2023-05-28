@@ -25,7 +25,7 @@ const FooterBar = () => {
 			<VGap gap={32} />
 
 			<div
-				className={lineBreak ? "links-col" : "links-row"}
+				className={`${lineBreak ? "links-col" : "links-row"} prevent-select`}
 				style={{
 					...(!lineBreak ? { width: "600px" } : {}),
 				}}
