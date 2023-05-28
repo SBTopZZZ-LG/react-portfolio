@@ -30,7 +30,7 @@ const FooterBar = () => {
 					...(!lineBreak ? { width: "600px" } : {}),
 				}}
 			>
-				<a href="/home">
+				<a href="/">
 					HOME
 				</a>
 				<a href="/about-me">

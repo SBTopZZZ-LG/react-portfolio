@@ -24,7 +24,7 @@ const MenuOverlay = ({
 				<VGap gap={69} />
 
 				<div className="links">
-					<a href="/home">
+					<a href="/">
 						<span className="path-delim">/</span> HOME
 					</a>
 					<a href="/about-me">
