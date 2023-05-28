@@ -12,18 +12,18 @@ const HomePage = () => {
 	const [sizeState, setSizeState] = useState(0);
 
 	function handleResize(ev) {
-		if (window.innerWidth < 600)
+		if (window.innerWidth < 700)
 			setSizeState(2);
-		else if (window.innerWidth < 999)
+		else if (window.innerWidth < 1100)
 			setSizeState(1);
 		else
 			setSizeState(0);
 	}
 
 	useEffect(() => {
-		if (window.innerWidth < 600)
+		if (window.innerWidth < 700)
 			setSizeState(2);
-		else if (window.innerWidth < 999)
+		else if (window.innerWidth < 1100)
 			setSizeState(1);
 		else
 			setSizeState(0);
@@ -150,11 +150,11 @@ const HomePage = () => {
 			justifyContent: "center",
 			width: "100%",
 		}}>
-			<div style={{ width: "984px" }}>
+			<div style={{ width: "1100px" }}>
 				<div style={{
 					display: "grid",
 					gridTemplateColumns: "2fr 1fr 1fr",
-					gridTemplateRows: "238px 191px 1fr",
+					gridTemplateRows: "258px 207px 1fr",
 					columnGap: "15px",
 					rowGap: "15px",
 				}}>
