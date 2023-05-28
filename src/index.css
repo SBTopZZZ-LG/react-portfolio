@@ -1,6 +1,13 @@
 /* Fonts */
 @import url("https://fonts.googleapis.com/css?family=Work+Sans");
 
+html,
+body,
+#root,
+.App {
+	height: 100%;
+}
+
 body {
 	background-color: #161616;
 	margin: 0;

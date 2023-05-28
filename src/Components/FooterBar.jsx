@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 
+import { VGap } from "./Gap";
+
 import Logo from "../Assets/Images/logo.png";
 
 import "./FooterBar.css";
-import { VGap } from "./Gap";
 
 const FooterBar = () => {
 	const [lineBreak, setLineBreak] = useState(false);
