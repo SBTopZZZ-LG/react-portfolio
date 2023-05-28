@@ -1,6 +1,6 @@
 import React from "react";
 
-import Card, { Padding } from "../../Components/Card";
+import Card from "../../Components/Card";
 import { VGap } from "../../Components/Gap";
 
 import LinkedIn from "../../Assets/Images/LinkedIn.svg";

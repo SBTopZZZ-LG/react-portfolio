@@ -19,7 +19,7 @@ const Navbar2 = ({
 
 		if (showMenu)
 			window.scrollTo(0, 0);
-	}, [showMenu]);
+	}, [onMenuClick, showMenu]);
 
 	return (
 		<nav className="sticky">

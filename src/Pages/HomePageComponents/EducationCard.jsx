@@ -3,7 +3,7 @@ import {
 	School,
 } from "@material-ui/icons";
 
-import Card, { Padding } from "../../Components/Card";
+import Card from "../../Components/Card";
 import { VGap } from "../../Components/Gap";
 
 const EducationCard = ({

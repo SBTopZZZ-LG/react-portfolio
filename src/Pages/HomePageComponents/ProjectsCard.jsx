@@ -1,6 +1,6 @@
 import React from "react";
 
-import Card, { Padding } from "../../Components/Card";
+import Card from "../../Components/Card";
 
 import Illustration from "../../Assets/Images/Projects.svg";
 
