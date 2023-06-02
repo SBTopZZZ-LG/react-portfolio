@@ -32,6 +32,7 @@ const MarqueeCard = ({
 	return (
 		<Card
 			width="auto"
+			hoverAnimation={false}
 			style={{
 				flexDirection: "column",
 				justifyContent: "center",

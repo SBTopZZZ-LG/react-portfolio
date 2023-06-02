@@ -21,6 +21,7 @@ const StatsCard = ({
 			{/* Years Of Experience */}
 			<Card
 				height="auto"
+				hoverAnimation={false}
 				style={{
 					alignItems: "center",
 					flexBasis: "0",
@@ -64,6 +65,7 @@ const StatsCard = ({
 			{/* Total Projects */}
 			<Card
 				height="auto"
+				hoverAnimation={false}
 				style={{
 					alignItems: "center",
 					flexBasis: "0",
@@ -107,6 +109,7 @@ const StatsCard = ({
 			{/* Certifications */}
 			<Card
 				height="auto"
+				hoverAnimation={false}
 				style={{
 					alignItems: "center",
 					flexBasis: "0",

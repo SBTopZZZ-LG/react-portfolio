@@ -23,7 +23,9 @@ const IdentityCard = ({
 				...style,
 			}}
 		>
-			<img className="prevent-select" src={Avatar} alt="Avatar" width="auto" height="160vh" />
+			<img className="prevent-select" src={Avatar} alt="Avatar" width="auto" height="160vh" style={{
+				transform: "translateZ(50px)",
+			}} />
 
 			<HMGap
 				gap={column ? 0 : 35}
