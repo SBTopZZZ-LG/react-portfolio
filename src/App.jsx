@@ -9,6 +9,7 @@ import HomePage from "./Pages/HomePage";
 
 import './App.css';
 import MenuOverlay from "./Pages/MenuOverlay";
+import AboutMePage from "./Pages/AboutMePage";
 
 function App() {
   const [showMenu, setShowMenu] = useState(false);
@@ -28,6 +29,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/about-me" element={<AboutMePage />} />
           </Routes>
         </BrowserRouter>
 
