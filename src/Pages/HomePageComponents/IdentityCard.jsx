@@ -11,6 +11,7 @@ const IdentityCard = ({
 }) => {
 	return (
 		<Card
+			hoverable={true}
 			width="auto"
 			height="auto"
 			style={{

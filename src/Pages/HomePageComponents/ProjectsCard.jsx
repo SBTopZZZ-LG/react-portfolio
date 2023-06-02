@@ -9,6 +9,7 @@ const ProjectsCard = ({
 }) => {
 	return (
 		<Card
+			hoverable={true}
 			width="auto"
 			height="auto"
 			style={{

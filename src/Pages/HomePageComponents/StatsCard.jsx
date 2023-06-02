@@ -8,6 +8,7 @@ const StatsCard = ({
 }) => {
 	return (
 		<Card
+			hoverable={true}
 			width="auto"
 			height="auto"
 			style={{
