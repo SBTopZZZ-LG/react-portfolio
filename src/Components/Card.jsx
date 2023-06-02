@@ -63,9 +63,9 @@ const Card = ({
 
 		observer.observe(cardRef.current);
 
+		const current = cardRef.current;
 		return () => {
-			// eslint-disable-next-line react-hooks/exhaustive-deps
-			observer.unobserve(cardRef.current);
+			observer.unobserve(current);
 		};
 	}, [hoverAnimation]);
 
