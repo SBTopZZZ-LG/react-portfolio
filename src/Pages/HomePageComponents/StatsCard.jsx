@@ -87,7 +87,7 @@ const StatsCard = ({
 						fontWeight: "600"
 					}}
 				>
-					09
+					08
 				</span>
 
 				<span
@@ -131,7 +131,7 @@ const StatsCard = ({
 						fontWeight: "600",
 					}}
 				>
-					04
+					03
 				</span>
 
 				<span
