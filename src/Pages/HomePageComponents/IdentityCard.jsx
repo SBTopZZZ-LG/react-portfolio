@@ -16,12 +16,14 @@ const IdentityCard = ({
 			height="auto"
 			style={{
 				alignItems: "center",
+				cursor: "pointer",
 				...(column ? {
 					display: "flex",
 					flexDirection: "column",
 				} : {}),
 				...style,
 			}}
+			onClick={() => window.location.href = "/about-me"}
 		>
 			<img className="prevent-select" src={Avatar} alt="Avatar" width="auto" height="160vh" style={{
 				transform: "translateZ(50px)",
