@@ -66,12 +66,12 @@
 	from {
 		opacity: 0;
 		scale: 80%;
-		transform: translateY(50px);
+		translate: 0px 50px;
 	}
 	to {
 		animation-timing-function: ease-out;
 		opacity: 1;
 		scale: 100%;
-		transform: translateY(0px);
+		translate: 0px 0px;
 	}
 }
