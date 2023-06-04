@@ -56,6 +56,7 @@ const StatsCard = ({
 						lineHeight: "1em",
 						maxHeight: "2em",
 						color: "#858585",
+						fontWeight: "600",
 					}}
 				>
 					Years Of Experience
@@ -100,6 +101,7 @@ const StatsCard = ({
 						lineHeight: "1em",
 						maxHeight: "2em",
 						color: "#858585",
+						fontWeight: "600",
 					}}
 				>
 					Total Projects
@@ -144,6 +146,7 @@ const StatsCard = ({
 						lineHeight: "1em",
 						maxHeight: "2em",
 						color: "#858585",
+						fontWeight: "600",
 					}}
 				>
 					Certifications
