@@ -8,6 +8,7 @@ import "./MenuOverlay.css";
 
 const MenuOverlay = ({
 	paddingTop = undefined,
+	onDismiss = undefined,
 }) => {
 	// TODO: Disable body's scrolling and make overlay scrollable
 
@@ -17,6 +18,7 @@ const MenuOverlay = ({
 			style={{
 				...(paddingTop !== undefined ? { top: paddingTop } : {}),
 			}}
+			onClick={onDismiss}
 		>
 			<div className="modal-content">
 				<VGap gap={59 - 15} />

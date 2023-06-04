@@ -9,6 +9,7 @@ import ToggleIcon from "material-ui-toggle-icon";
 import "./NavBar.css";
 
 const Navbar2 = ({
+	menuState = false,
 	onMenuClick = undefined,
 }) => {
 	const [showMenu, setShowMenu] = useState(false);
@@ -20,6 +21,10 @@ const Navbar2 = ({
 		if (showMenu)
 			window.scrollTo(0, 0);
 	}, [onMenuClick, showMenu]);
+
+	useEffect(() => {
+		setShowMenu(menuState);
+	}, [menuState]);
 
 	return (
 		<nav className="sticky">

@@ -24,8 +24,8 @@ function App() {
         marginBottom: "-204px",
       }}>
         {/* NavBar */}
-        <Navbar2 onMenuClick={setShowMenu} />
-        {showMenu && <MenuOverlay paddingTop="60px" />}
+        <Navbar2 menuState={showMenu} onMenuClick={setShowMenu} />
+        {showMenu && <MenuOverlay onDismiss={() => setShowMenu(false)} paddingTop="60px" />}
         <VGap gap={100} />
 
         {/* Page content */}
