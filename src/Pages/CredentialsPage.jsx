@@ -111,7 +111,7 @@ const CredentialsPage = () => {
 			}}>
 				<span style={{
 					fontSize: "45px",
-					fontWeight: "bold",
+					fontWeight: "600",
 					marginBottom: "16px",
 				}}>
 					<span style={{ fontWeight: "900" }}>/</span> CREDENTIALS

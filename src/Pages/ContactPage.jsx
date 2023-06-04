@@ -34,7 +34,7 @@ const ContactPage = () => {
 			}}>
 				<span style={{
 					fontSize: "45px",
-					fontWeight: "bold",
+					fontWeight: "600",
 					marginBottom: "50px",
 					textAlign: "right",
 				}}>

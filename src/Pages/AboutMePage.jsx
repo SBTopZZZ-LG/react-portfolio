@@ -36,7 +36,7 @@ const AboutMePage = () => {
 				}}>
 					<span style={{
 						fontSize: "45px",
-						fontWeight: "bold",
+						fontWeight: "600",
 						marginBottom: "16px",
 						textAlign: "right",
 						width: "100%",

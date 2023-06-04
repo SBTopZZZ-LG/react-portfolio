@@ -49,7 +49,7 @@ const Works = () => {
 			}}>
 				<span style={{
 					fontSize: "45px",
-					fontWeight: "bold",
+					fontWeight: "600",
 					marginBottom: "16px",
 					width: "auto",
 					textAlign: "right",
