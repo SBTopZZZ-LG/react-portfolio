@@ -58,10 +58,15 @@ const EducationCard = ({ style = {} }) => {
 					fontSize: "15px",
 				}}>EDUCATION</span>
 
-				<span className="view-all" style={{
-					fontWeight: "700",
-					fontSize: "15px",
-				}}>View All</span>
+				<a
+					href="/credentials#education"
+					style={{ all: "unset", cursor: "pointer" }}
+				>
+					<span className="view-all" style={{
+						fontWeight: "700",
+						fontSize: "15px",
+					}}>View All</span>
+				</a>
 			</div>
 
 			<Tile

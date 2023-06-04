@@ -52,10 +52,15 @@ const TopSkillsCard = ({ style = {} }) => {
 					fontSize: "15px",
 				}}>TOP SKILLS</span>
 
-				<span className="view-all" style={{
-					fontWeight: "700",
-					fontSize: "15px",
-				}}>View All</span>
+				<a
+					href="/credentials#skills"
+					style={{ all: "unset", cursor: "pointer" }}
+				>
+					<span className="view-all" style={{
+						fontWeight: "700",
+						fontSize: "15px",
+					}}>View All</span>
+				</a>
 			</div>
 
 			<div style={{
