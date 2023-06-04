@@ -5,6 +5,7 @@ import MyCard from "./CredentialsPageComponents/MyCard";
 import { VGap } from "../Components/Gap";
 
 import "./CredentialsPage.css";
+import { useLocation } from "react-router-dom";
 
 const Tile = ({
 	dateRange = ["Jan 1970", "Jun 1970"],
@@ -42,6 +43,7 @@ const Tile = ({
 };
 
 const CredentialsPage = () => {
+	const { hash } = useLocation();
 	const [sizeState, setSizeState] = useState(0);
 
 	function handleResize(ev) {
@@ -50,6 +52,16 @@ const CredentialsPage = () => {
 		else
 			setSizeState(0);
 	}
+
+	useEffect(() => {
+		const trimmedHash = hash.substring(1).trim().toLowerCase();
+		if (trimmedHash === "about-me")
+			document.getElementById("about-me-section").scrollIntoView();
+		else if (trimmedHash === "experience")
+			document.getElementById("experience-section").scrollIntoView();
+		else if (trimmedHash === "education")
+			document.getElementById("education-section").scrollIntoView();
+	}, [hash]);
 
 	useEffect(() => {
 		if (window.innerWidth < 800)
@@ -96,7 +108,7 @@ const CredentialsPage = () => {
 						flexGrow: "1",
 						gap: "30px",
 					}}>
-						<span className="title">ABOUT ME</span>
+						<span id="about-me-section" className="title">ABOUT ME</span>
 						<div className="content">
 							I am Saumitra Topinkatti, a dedicated and driven student of Computer Science,
 							always seeking new challenges and opportunities for growth. With a passion for
@@ -108,7 +120,7 @@ const CredentialsPage = () => {
 							impact in the ever-evolving world of technology.
 						</div>
 
-						<span className="title">EXPERIENCE</span>
+						<span id="experience-section" className="title">EXPERIENCE</span>
 						<div className="content">
 							<Tile
 								dateRange={["March 2023", "Present"]}
@@ -167,7 +179,7 @@ const CredentialsPage = () => {
 							</Tile>
 						</div>
 
-						<span className="title">EDUCATION</span>
+						<span id="education-section" className="title">EDUCATION</span>
 						<div className="content">
 							<Tile
 								dateRange={["2020", "2024"]}
