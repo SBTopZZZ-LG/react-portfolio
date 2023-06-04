@@ -11,7 +11,7 @@ import MarqueeCard from "./HomePageComponents/MarqueeCard";
 const HomePage = () => {
 	const [sizeState, setSizeState] = useState(0);
 
-	function handleResize(ev) {
+	function handleResize() {
 		if (window.innerWidth < 700)
 			setSizeState(2);
 		else if (window.innerWidth < 1130)
@@ -21,12 +21,7 @@ const HomePage = () => {
 	}
 
 	useEffect(() => {
-		if (window.innerWidth < 700)
-			setSizeState(2);
-		else if (window.innerWidth < 1130)
-			setSizeState(1);
-		else
-			setSizeState(0);
+		handleResize();
 
 		window.addEventListener("resize", handleResize);
 		return () => window.removeEventListener("resize", handleResize);

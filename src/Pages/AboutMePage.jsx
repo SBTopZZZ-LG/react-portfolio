@@ -10,7 +10,7 @@ import TopCertificationsCard from "./AboutMePageComponents/TopCertificationsCard
 const AboutMePage = () => {
 	const [sizeState, setSizeState] = useState(0);
 
-	function handleResize(ev) {
+	function handleResize() {
 		if (window.innerWidth < 700)
 			setSizeState(1);
 		else
@@ -18,10 +18,7 @@ const AboutMePage = () => {
 	}
 
 	useEffect(() => {
-		if (window.innerWidth < 700)
-			setSizeState(1);
-		else
-			setSizeState(0);
+		handleResize();
 
 		window.addEventListener("resize", handleResize);
 		return () => window.removeEventListener("resize", handleResize);

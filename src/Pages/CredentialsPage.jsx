@@ -71,7 +71,7 @@ const CredentialsPage = () => {
 	const { hash } = useLocation();
 	const [sizeState, setSizeState] = useState(0);
 
-	function handleResize(ev) {
+	function handleResize() {
 		if (window.innerWidth < 800)
 			setSizeState(1);
 		else
@@ -91,10 +91,7 @@ const CredentialsPage = () => {
 	}, [hash]);
 
 	useEffect(() => {
-		if (window.innerWidth < 800)
-			setSizeState(1);
-		else
-			setSizeState(0);
+		handleResize();
 
 		window.addEventListener("resize", handleResize);
 		return () => window.removeEventListener("resize", handleResize);
