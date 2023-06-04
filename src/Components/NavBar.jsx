@@ -24,7 +24,9 @@ const Navbar2 = ({
 	return (
 		<nav className="sticky">
 			<div>
-				<span className="navbar-logo prevent-select">Saumitra Topinkatti</span>
+				<a href="/" style={{ all: "unset", cursor: "pointer" }}>
+					<span className="navbar-logo prevent-select">Saumitra Topinkatti</span>
+				</a>
 			</div>
 
 			<div className="right">
