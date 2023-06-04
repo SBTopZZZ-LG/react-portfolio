@@ -1,4 +1,4 @@
-import React, { useCallback, useRef } from "react";
+import React from "react";
 
 import MyCard from "./CredentialsPageComponents/MyCard";
 
@@ -42,17 +42,6 @@ const Tile = ({
 };
 
 const CredentialsPage = () => {
-	const { expRef } = useRef(null);
-	const { eduRef } = useCallback(node => {
-		if (!node)
-			return;
-
-		setInterval(() => window.scrollTo({
-			top: node.getBoundingClientRect().top,
-			behavior: "smooth"
-		}), 1000);
-	}, []);
-
 	return (
 		<div style={{
 			display: "flex",
@@ -98,7 +87,7 @@ const CredentialsPage = () => {
 							impact in the ever-evolving world of technology.
 						</div>
 
-						<span ref={expRef} className="title">EXPERIENCE</span>
+						<span className="title">EXPERIENCE</span>
 						<div className="content">
 							<Tile
 								dateRange={["March 2023", "Present"]}
@@ -157,7 +146,7 @@ const CredentialsPage = () => {
 							</Tile>
 						</div>
 
-						<span ref={eduRef} className="title">EDUCATION</span>
+						<span className="title">EDUCATION</span>
 						<div className="content">
 							<Tile
 								dateRange={["2020", "2024"]}
