@@ -36,12 +36,12 @@ const AboutMePage = () => {
 				}}>
 					<span style={{
 						fontSize: "45px",
-						fontWeight: "600",
 						marginBottom: "16px",
 						textAlign: "right",
 						width: "100%",
+						fontWeight: "600",
 					}}>
-						<span style={{ fontWeight: "900" }}>/</span> ABOUT
+						<span style={{ fontWeight: "900" }}>/</span><span>ABOUT</span>
 					</span>
 					<div style={{
 						display: "flex",
@@ -79,7 +79,7 @@ const AboutMePage = () => {
 					}}>
 						<span style={{
 							fontSize: "45px",
-							fontWeight: "bold",
+							fontWeight: "600",
 							marginBottom: "16px",
 						}}>
 							<span style={{ fontWeight: "900" }}>/</span> ABOUT
