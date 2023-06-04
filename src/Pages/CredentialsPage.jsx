@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import MyCard from "./CredentialsPageComponents/MyCard";
 
@@ -42,6 +42,25 @@ const Tile = ({
 };
 
 const CredentialsPage = () => {
+	const [sizeState, setSizeState] = useState(0);
+
+	function handleResize(ev) {
+		if (window.innerWidth < 800)
+			setSizeState(1);
+		else
+			setSizeState(0);
+	}
+
+	useEffect(() => {
+		if (window.innerWidth < 800)
+			setSizeState(1);
+		else
+			setSizeState(0);
+
+		window.addEventListener("resize", handleResize);
+		return () => window.removeEventListener("resize", handleResize);
+	}, []);
+
 	return (
 		<div style={{
 			display: "flex",
@@ -63,8 +82,10 @@ const CredentialsPage = () => {
 				</span>
 
 				<div style={{
+					...(sizeState === 1 ? { alignItems: "center" } : {}),
 					width: "100%",
 					display: "flex",
+					flexDirection: (sizeState === 1 ? "column" : "row"),
 					gap: "45px",
 				}}>
 					<MyCard />
