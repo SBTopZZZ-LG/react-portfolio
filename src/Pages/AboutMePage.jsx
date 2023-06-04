@@ -41,7 +41,7 @@ const AboutMePage = () => {
 						fontSize: "45px",
 						fontWeight: "bold",
 						marginBottom: "16px",
-						textAlign: "left",
+						textAlign: "right",
 						width: "100%",
 					}}>
 						<span style={{ fontWeight: "900" }}>/</span> ABOUT
