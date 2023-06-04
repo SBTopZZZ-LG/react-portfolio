@@ -24,6 +24,7 @@ const FormCard = ({ style = {} }) => {
 		>
 			<span style={{
 				fontSize: "34px",
+				fontWeight: "600",
 			}}>
 				Let's work <span style={{ color: "#3F97FF" }}>together</span>.
 			</span>
