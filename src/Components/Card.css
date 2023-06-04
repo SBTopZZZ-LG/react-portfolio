@@ -48,7 +48,7 @@
 	font-size: 14.5px;
 	font-weight: bold;
 	padding: 35px;
-	transition: 300ms ease-out;
+	transition: 300ms ease-in-out;
 }
 
 /* Embedded card */
@@ -59,16 +59,19 @@
 /* Animations */
 .fade-in {
 	opacity: 0;
-	animation: fade-in-anim 400ms ease-out forwards;
+	animation: fade-in-anim 1s forwards;
 }
 
 @keyframes fade-in-anim {
 	from {
 		opacity: 0;
-		scale: 105%;
+		scale: 80%;
+		transform: translateY(50px);
 	}
 	to {
+		animation-timing-function: ease-out;
 		opacity: 1;
 		scale: 100%;
+		transform: translateY(0px);
 	}
 }
