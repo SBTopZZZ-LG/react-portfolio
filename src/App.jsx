@@ -12,6 +12,7 @@ import MenuOverlay from "./Pages/MenuOverlay";
 import AboutMePage from "./Pages/AboutMePage";
 import WorksPage from "./Pages/WorksPage";
 import CredentialsPage from "./Pages/CredentialsPage";
+import ContactPage from "./Pages/ContactPage";
 
 function App() {
   const [showMenu, setShowMenu] = useState(false);
@@ -34,6 +35,7 @@ function App() {
             <Route path="/about-me" element={<AboutMePage />} />
             <Route path="/works" element={<WorksPage />} />
             <Route path="/credentials" element={<CredentialsPage />} />
+            <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </BrowserRouter>
 
