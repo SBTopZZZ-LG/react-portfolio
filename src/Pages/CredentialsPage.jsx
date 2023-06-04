@@ -42,6 +42,31 @@ const Tile = ({
 	);
 };
 
+const Tile2 = ({
+	title = "Tech",
+	strength = "69",
+}) => {
+	return (
+		<div style={{
+			display: "flex",
+			flexDirection: "column",
+			gap: "5px",
+			justifyContent: "space-around",
+		}}>
+			<span style={{
+				color: "#858585",
+				fontWeight: "500",
+				fontSize: "15px",
+			}}>{strength} %</span>
+
+			<span className="white" style={{
+				fontWeight: "600",
+				fontSize: "18px",
+			}}>{title}</span>
+		</div>
+	);
+};
+
 const CredentialsPage = () => {
 	const { hash } = useLocation();
 	const [sizeState, setSizeState] = useState(0);
@@ -61,6 +86,8 @@ const CredentialsPage = () => {
 			document.getElementById("experience-section").scrollIntoView();
 		else if (trimmedHash === "education")
 			document.getElementById("education-section").scrollIntoView();
+		else if (trimmedHash === "skills")
+			document.getElementById("skills-section").scrollIntoView();
 	}, [hash]);
 
 	useEffect(() => {
@@ -224,6 +251,87 @@ const CredentialsPage = () => {
 									I completed my schooling at DPM School, Belagavi, in 2018. I was admitted to the school in the year 2008.
 								</span>
 							</Tile>
+						</div>
+
+						<span id="skills-section" className="title">SKILLS</span>
+						<div className="content">
+							<div style={{
+								display: "flex",
+								justifyContent: "space-between",
+								maxWidth: (sizeState === 0 ? "400px" : "100%"),
+							}}>
+								<div style={{
+									display: "flex",
+									flexDirection: "column",
+									gap: "35px",
+								}}>
+									<Tile2
+										strength="90"
+										title="Flutter"
+									/>
+
+									<Tile2
+										strength="97"
+										title="Node.js"
+									/>
+
+									<Tile2
+										strength="94"
+										title="JavaScript"
+									/>
+
+									<Tile2
+										strength="78"
+										title="React"
+									/>
+
+									<Tile2
+										strength="85"
+										title="Figma"
+									/>
+
+									<Tile2
+										strength="94"
+										title="Java"
+									/>
+								</div>
+
+								<div style={{
+									display: "flex",
+									flexDirection: "column",
+									gap: "35px",
+								}}>
+									<Tile2
+										strength="92"
+										title="REST APIs"
+									/>
+
+									<Tile2
+										strength="83"
+										title="Microservices"
+									/>
+
+									<Tile2
+										strength="88"
+										title="C/C++"
+									/>
+
+									<Tile2
+										strength="79"
+										title="Python"
+									/>
+
+									<Tile2
+										strength="89"
+										title="MongoDB"
+									/>
+
+									<Tile2
+										strength="77"
+										title="Photoshop"
+									/>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
