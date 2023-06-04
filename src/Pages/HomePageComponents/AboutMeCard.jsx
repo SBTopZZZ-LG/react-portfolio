@@ -14,12 +14,14 @@ const AboutMeCard = ({
 			width="auto"
 			height="auto"
 			style={{
+				cursor: "pointer",
 				alignItems: "start",
 				flexDirection: "column",
 				justifyContent: "end",
 				textAlign: "left",
 				...style,
 			}}
+			onClick={() => window.location.href = "/credentials"}
 		>
 			<VMGap
 				gap={16}

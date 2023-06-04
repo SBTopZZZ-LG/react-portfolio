@@ -13,6 +13,7 @@ const Card = ({
 	height = undefined,
 	flexGrow = undefined,
 	flexBasis = undefined,
+	onClick = undefined,
 }) => {
 	const cardRef = useRef(null);
 
@@ -81,6 +82,7 @@ const Card = ({
 				...(hoverAnimation ? { transform: `rotateX(${rotate.rotateY}deg) rotateY(${rotate.rotateX}deg)` } : {}),
 				...style,
 			}}
+			onClick={onClick}
 			onMouseMove={hoverAnimation ? handleMouseMove : undefined}
 			onMouseOut={hoverAnimation ? handleMouseOut : undefined}
 		>

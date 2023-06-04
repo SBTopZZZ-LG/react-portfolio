@@ -15,12 +15,14 @@ const EducationCard = ({
 			width="auto"
 			height="auto"
 			style={{
+				cursor: "pointer",
 				alignItems: "start",
 				flexDirection: "column",
 				justifyContent: "end",
 				textAlign: "left",
 				...style,
 			}}
+			onClick={() => window.location.href = "/credentials#education"}
 		>
 			<VGap gap={18} />
 			<center style={{

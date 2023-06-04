@@ -11,6 +11,7 @@ import './App.css';
 import MenuOverlay from "./Pages/MenuOverlay";
 import AboutMePage from "./Pages/AboutMePage";
 import WorksPage from "./Pages/WorksPage";
+import CredentialsPage from "./Pages/CredentialsPage";
 
 function App() {
   const [showMenu, setShowMenu] = useState(false);
@@ -32,6 +33,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/about-me" element={<AboutMePage />} />
             <Route path="/works" element={<WorksPage />} />
+            <Route path="/credentials" element={<CredentialsPage />} />
           </Routes>
         </BrowserRouter>
 

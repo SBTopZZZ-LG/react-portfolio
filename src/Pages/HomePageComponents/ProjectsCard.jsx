@@ -13,12 +13,14 @@ const ProjectsCard = ({
 			width="auto"
 			height="auto"
 			style={{
+				cursor: "pointer",
 				alignItems: "start",
 				flexDirection: "column",
 				justifyContent: "end",
 				textAlign: "left",
 				...style,
 			}}
+			onClick={() => window.location.href = "/works"}
 		>
 			<center style={{
 				width: "100%",
