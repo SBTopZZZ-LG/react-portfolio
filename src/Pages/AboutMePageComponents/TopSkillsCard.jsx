@@ -48,7 +48,7 @@ const TopSkillsCard = ({ style = {} }) => {
 				justifyContent: "space-between",
 			}}>
 				<span className="white" style={{
-					fontWeight: "bold",
+					fontWeight: "600",
 					fontSize: "15px",
 				}}>TOP SKILLS</span>
 
@@ -57,7 +57,7 @@ const TopSkillsCard = ({ style = {} }) => {
 					style={{ all: "unset", cursor: "pointer" }}
 				>
 					<span className="view-all" style={{
-						fontWeight: "700",
+						fontWeight: "600",
 						fontSize: "15px",
 					}}>View All</span>
 				</a>

@@ -110,7 +110,8 @@ const CredentialsPage = () => {
 				flexDirection: "column",
 			}}>
 				<span style={{
-					fontSize: "45px",
+					fontSize: (sizeState === 1 ? "7vw" : "45px"),
+					whiteSpace: "nowrap",
 					fontWeight: "600",
 					marginBottom: "16px",
 				}}>
@@ -333,7 +334,7 @@ const CredentialsPage = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</div >
 	);
 };
 

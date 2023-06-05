@@ -7,6 +7,7 @@ import Card from "../../Components/Card";
 import { VGap } from "../../Components/Gap";
 
 const EducationCard = ({
+	noObserverFadeIn = true,
 	style = {},
 }) => {
 	return (
@@ -14,6 +15,7 @@ const EducationCard = ({
 			hoverable={true}
 			width="auto"
 			height="auto"
+			noObserverFadeIn={noObserverFadeIn}
 			style={{
 				cursor: "pointer",
 				alignItems: "start",

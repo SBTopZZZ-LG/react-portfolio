@@ -47,7 +47,7 @@ const ExperienceCard = ({ style = {} }) => {
 			}}
 		>
 			<span className="white" style={{
-				fontWeight: "bold",
+				fontWeight: "600",
 				fontSize: "15px",
 			}}>EXPERIENCE</span>
 

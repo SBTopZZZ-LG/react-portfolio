@@ -55,32 +55,38 @@ const HomePage = () => {
 					<MarqueeCard
 						key="marquee-card"
 						style={{ gridColumn: "1 / span 1" }}
+						noObserverFadeIn={false}
 					/>
 
 					<AboutMeCard
 						key="about-me-card"
 						style={{ gridColumn: "1 / span 1" }}
+						noObserverFadeIn={false}
 					/>
 
 					<SocialsCard
 						key="socials-card"
 						style={{ gridColumn: "1 / span 1" }}
+						noObserverFadeIn={false}
 					/>
 
 					<StatsCard
 						key="stats-card"
 						column={true}
 						style={{ gridColumn: "1 / span 1" }}
+						noObserverFadeIn={false}
 					/>
 
 					<EducationCard
 						key="education-card"
 						style={{ gridColumn: "1 / span 1" }}
+						noObserverFadeIn={false}
 					/>
 
 					<ProjectsCard
 						key="projects-card"
 						style={{ gridColumn: "1 / span 1" }}
+						noObserverFadeIn={false}
 					/>
 				</div>
 			</div>

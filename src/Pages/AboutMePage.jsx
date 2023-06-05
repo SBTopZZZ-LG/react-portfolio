@@ -35,7 +35,7 @@ const AboutMePage = () => {
 					gap: "24px",
 				}}>
 					<span style={{
-						fontSize: "45px",
+						fontSize: "7vw",
 						marginBottom: "16px",
 						textAlign: "right",
 						width: "100%",
@@ -47,7 +47,7 @@ const AboutMePage = () => {
 						display: "flex",
 						justifyContent: "center",
 					}}>
-						<ImageCard />
+						<ImageCard style={{ flexGrow: "1", justifyContent: "center" }} />
 					</div>
 					<InfoCard style={{ width: "auto" }} />
 					<ExperienceCard style={{ width: "auto" }} />

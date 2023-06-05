@@ -11,6 +11,7 @@ import Twitter from "../../Assets/Images/Twitter.svg";
 import "./SocialsCard.css";
 
 const SocialsCard = ({
+	noObserverFadeIn = true,
 	style = {},
 }) => {
 	return (
@@ -18,6 +19,7 @@ const SocialsCard = ({
 			hoverable={true}
 			width="auto"
 			height="auto"
+			noObserverFadeIn={noObserverFadeIn}
 			style={{
 				alignItems: "start",
 				flexDirection: "column",

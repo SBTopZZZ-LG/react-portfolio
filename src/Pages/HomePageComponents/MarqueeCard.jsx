@@ -9,6 +9,7 @@ import Words from "../../Assets/Datasets/words.json";
 import "./MarqueeCard.css";
 
 const MarqueeCard = ({
+	noObserverFadeIn = true,
 	strings = Words,
 	style = {},
 }) => {
@@ -33,6 +34,7 @@ const MarqueeCard = ({
 		<Card
 			width="auto"
 			hoverAnimation={false}
+			noObserverFadeIn={noObserverFadeIn}
 			style={{
 				flexDirection: "column",
 				justifyContent: "center",

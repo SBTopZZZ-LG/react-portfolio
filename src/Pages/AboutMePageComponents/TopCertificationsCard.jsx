@@ -60,7 +60,7 @@ const TopCertificationsCard = ({ style = {} }) => {
 					justifyContent: "space-between",
 				}}>
 					<span className="white" style={{
-						fontWeight: "bold",
+						fontWeight: "600",
 						fontSize: "15px",
 					}}>TOP CERTIFICATIONS</span>
 				</div>
