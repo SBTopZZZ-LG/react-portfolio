@@ -47,7 +47,7 @@ const AboutMePage = () => {
 						display: "flex",
 						justifyContent: "center",
 					}}>
-						<ImageCard />
+						<ImageCard style={{ flexGrow: "1", justifyContent: "center" }} />
 					</div>
 					<InfoCard style={{ width: "auto" }} />
 					<ExperienceCard style={{ width: "auto" }} />
