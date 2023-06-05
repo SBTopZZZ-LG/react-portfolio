@@ -33,7 +33,7 @@ const ContactPage = () => {
 				flexDirection: "column",
 			}}>
 				<span style={{
-					fontSize: "45px",
+					fontSize: (sizeState === 1 ? "7vw" : "45px"),
 					fontWeight: "600",
 					marginBottom: "50px",
 					textAlign: "right",

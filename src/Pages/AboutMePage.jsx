@@ -35,7 +35,7 @@ const AboutMePage = () => {
 					gap: "24px",
 				}}>
 					<span style={{
-						fontSize: "45px",
+						fontSize: "7vw",
 						marginBottom: "16px",
 						textAlign: "right",
 						width: "100%",
