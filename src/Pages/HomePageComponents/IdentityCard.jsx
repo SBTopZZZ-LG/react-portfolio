@@ -6,6 +6,7 @@ import { HMGap, VMGap } from "../../Components/Gap";
 import Avatar from "../../Assets/Images/picture.png";
 
 const IdentityCard = ({
+	noObserverFadeIn = true,
 	style = {},
 	column = false,
 }) => {
@@ -14,6 +15,7 @@ const IdentityCard = ({
 			hoverable={true}
 			width="auto"
 			height="auto"
+			noObserverFadeIn={noObserverFadeIn}
 			style={{
 				alignItems: "center",
 				cursor: "pointer",

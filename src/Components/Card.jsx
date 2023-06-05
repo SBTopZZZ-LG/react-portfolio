@@ -8,6 +8,7 @@ const Card = ({
 	children,
 	hoverable = false,
 	hoverAnimation = true,
+	noObserverFadeIn = false,
 	style = {},
 	width = undefined,
 	height = undefined,
@@ -17,7 +18,7 @@ const Card = ({
 }) => {
 	const cardRef = useRef(null);
 
-	const [shouldFadeIn, setShouldFadeIn] = useState(false);
+	const [shouldFadeIn, setShouldFadeIn] = useState(noObserverFadeIn);
 	const [rotate, setRotate] = useState({
 		rotateX: 0,
 		rotateY: 0,
@@ -55,6 +56,7 @@ const Card = ({
 
 		const observer = new IntersectionObserver(
 			([entry]) => {
+				if (shouldFadeIn) return;
 				if (entry.isIntersecting) {
 					setShouldFadeIn(true);
 				}
@@ -68,7 +70,7 @@ const Card = ({
 		return () => {
 			observer.unobserve(current);
 		};
-	}, [hoverAnimation]);
+	}, [hoverAnimation, shouldFadeIn]);
 
 	return (
 		<div

@@ -3,6 +3,7 @@ import React from "react";
 import Card from "../../Components/Card";
 
 const StatsCard = ({
+	noObserverFadeIn = true,
 	style = {},
 	column = false,
 }) => {
@@ -11,6 +12,7 @@ const StatsCard = ({
 			hoverable={true}
 			width="auto"
 			height="auto"
+			noObserverFadeIn={noObserverFadeIn}
 			style={{
 				display: "flex",
 				padding: "10px",

@@ -6,6 +6,7 @@ import { VMGap } from "../../Components/Gap";
 import Signature from "../../Assets/Images/signature.svg";
 
 const AboutMeCard = ({
+	noObserverFadeIn = true,
 	style = {},
 }) => {
 	return (
@@ -13,6 +14,7 @@ const AboutMeCard = ({
 			hoverable={true}
 			width="auto"
 			height="auto"
+			noObserverFadeIn={noObserverFadeIn}
 			style={{
 				cursor: "pointer",
 				alignItems: "start",
