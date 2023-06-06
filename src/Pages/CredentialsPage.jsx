@@ -257,6 +257,7 @@ const CredentialsPage = () => {
 								display: "flex",
 								justifyContent: "space-between",
 								maxWidth: (sizeState === 0 ? "400px" : "100%"),
+								boxSizing: "border-box",
 							}}>
 								<div style={{
 									display: "flex",

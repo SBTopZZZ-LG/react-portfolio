@@ -18,6 +18,7 @@ const MyCard = ({ style = {} }) => {
 			style={{
 				alignItems: "center",
 				flexDirection: "column",
+				padding: "20px",
 				...style,
 			}}
 		>
@@ -128,6 +129,7 @@ const MyCard = ({ style = {} }) => {
 				style={{
 					width: "100%",
 					marginTop: "30px",
+					boxSizing: "border-box",
 				}}
 			>
 				Contact Me
