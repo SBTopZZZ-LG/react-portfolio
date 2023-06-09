@@ -11,7 +11,10 @@ const ImageCard = ({
 		<Card
 			hoverable={true}
 			height="auto"
-			style={{ ...style }}
+			style={{
+				aspectRatio: "1 / 1",
+				...style
+			}}
 		>
 			<img
 				className="prevent-select"
