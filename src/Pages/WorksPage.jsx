@@ -59,6 +59,20 @@ const Works = () => {
 
 				<Card hoverable={true} style={{ width: "auto" }}>
 					<Tile
+						dateRange={["May", "June 2023"]}
+						title="Portfolio Website"
+						skills={[
+							"React",
+							"Figma",
+							"HTML5",
+							"CSS",
+							"JavaScript"
+						]}
+					/>
+				</Card>
+
+				<Card hoverable={true} style={{ width: "auto" }}>
+					<Tile
 						dateRange={["February", "March 2023"]}
 						title="Aura 23 Website"
 						skills={[
