@@ -4,6 +4,9 @@ import Card from "../../Components/Card";
 import { HMGap, VMGap } from "../../Components/Gap";
 
 import Avatar from "../../Assets/Images/picture.png";
+import Resume from "../../Assets/Files/Resume.pdf";
+
+import "./IdentityCard.css";
 
 const IdentityCard = ({
 	noObserverFadeIn = true,
@@ -52,6 +55,16 @@ const IdentityCard = ({
 							<br />
 							Topinkatti.
 						</span>
+					</VMGap>
+					<VMGap gap={5}>
+						<a
+							href={Resume}
+							style={{ all: "unset" }}
+						>
+							<span className="white button3" style={{ fontSize: "15px" }}>
+								VIEW RESUME
+							</span>
+						</a>
 					</VMGap>
 				</div>
 			</HMGap>
