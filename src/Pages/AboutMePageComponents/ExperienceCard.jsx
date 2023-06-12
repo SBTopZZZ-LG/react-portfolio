@@ -2,6 +2,8 @@ import React from "react";
 
 import Card from "../../Components/Card";
 
+import data from "../../Assets/Datasets/aboutMePage.json";
+
 const Tile = ({
 	dateRange = ["Jan 1970", "Jun 1970"],
 	title = "Job",
@@ -51,17 +53,14 @@ const ExperienceCard = ({ style = {} }) => {
 				fontSize: "15px",
 			}}>EXPERIENCE</span>
 
-			<Tile
-				dateRange={["March 2023", "Present"]}
-				title="Flutter Development Intern"
-				company="Tharasis (Part-time)"
-			/>
-
-			<Tile
-				dateRange={["March", "June 2022"]}
-				title="Node.js Development Intern"
-				company="Forty4Hz"
-			/>
+			{data.experienceCard.map(data => (
+				<Tile
+					key={data.date}
+					dateRange={data.date}
+					title={data.title}
+					company={data.company}
+				/>
+			))}
 		</Card>
 	);
 };

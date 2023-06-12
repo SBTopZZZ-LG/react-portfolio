@@ -3,6 +3,8 @@ import React from "react";
 import Card from "../../Components/Card";
 import { HGap } from "../../Components/Gap";
 
+import data from "../../Assets/Datasets/aboutMePage.json";
+
 import "./InfoCard.css";
 
 const InfoCard = ({
@@ -31,12 +33,10 @@ const InfoCard = ({
 				<span style={{ color: "#858585" }}>{"(He/Him)"}</span><br />
 			</div>
 
-			<span style={{ color: "#858585" }}>Software Development Intern @ Tharasis</span>
+			<span style={{ color: "#858585" }}>{data.infoCard.headline}</span>
 
 			<span style={{ color: "#858585", marginTop: "30px" }}>
-				I am a dedicated full-stack developer proficient with React,
-				Flutter, and Node.js. I am also a UI/UX designer for web and
-				mobile apps. I am a 3rd year Computer Science student studying at KLS GIT.
+				{data.infoCard.bio}
 			</span>
 		</Card>
 	);
