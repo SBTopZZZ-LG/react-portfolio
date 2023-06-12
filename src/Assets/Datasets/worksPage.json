@@ -3,7 +3,10 @@
 		{
 			"date": ["May", "June 2023"],
 			"title": "Portfolio Website",
-			"skills": ["React", "Figma", "HTML5", "CSS", "JavaScript"]
+			"skills": ["React", "Figma", "HTML5", "CSS", "JavaScript"],
+			"links": {
+				"github": "https://github.com/SBTopZZZ-LG/react-portfolio"
+			}
 		},
 		{
 			"date": ["February", "March 2023"],
@@ -15,32 +18,58 @@
 				"Micro-services",
 				"JavaScript",
 				"REST API"
-			]
+			],
+			"links": {
+				"github": "https://github.com/SBTopZZZ-LG/aura-git"
+			}
 		},
 		{
 			"date": ["November 2022", "February 2023"],
 			"title": "CodeCollab",
-			"skills": ["Java", "Socket Programming"]
+			"skills": ["Java", "Socket Programming"],
+			"links": {
+				"github": "https://github.com/SBTopZZZ-LG/java_codecollab"
+			}
 		},
 		{
 			"date": ["October", "November 2022"],
 			"title": "Flutter package: render_box_exposed",
-			"skills": ["Flutter", "Dart"]
+			"skills": ["Flutter", "Dart"],
+			"links": {
+				"github": "https://github.com/SBTopZZZ-LG/flutter_render_box_exposed"
+			}
 		},
 		{
 			"date": ["September 2022"],
 			"title": "Archivit",
-			"skills": ["Java"]
+			"skills": ["Java"],
+			"links": {
+				"github": "https://github.com/SBTopZZZ-LG/java_archiver"
+			}
 		},
 		{
 			"date": ["February 2022"],
 			"title": "Blog.io",
-			"skills": ["HTML5", "CSS", "Node.js", "MongoDB", "JavaScript", "REST API"]
+			"skills": [
+				"HTML5",
+				"CSS",
+				"Node.js",
+				"MongoDB",
+				"JavaScript",
+				"REST API"
+			],
+			"links": {
+				"github": "https://github.com/SBTopZZZ-LG/web_project-blogio-frontend",
+				"url": "https://sbtopzzz-lg.github.io/web_project-blogio-frontend/"
+			}
 		},
 		{
 			"date": ["January 2022"],
 			"title": "Email Scheduler v2",
-			"skills": ["Java"]
+			"skills": ["Java"],
+			"links": {
+				"github": "https://github.com/SBTopZZZ-LG/java-emailscheduler-v2"
+			}
 		},
 		{
 			"date": ["June", "July 2021"],
@@ -52,7 +81,11 @@
 				"Dart",
 				"JavaScript",
 				"REST API"
-			]
+			],
+			"links": {
+				"github": "https://github.com/SBTopZZZ-LG/ClipIt-FlutterWeb",
+				"url": "https://clip-it-web.netlify.app/"
+			}
 		},
 		{
 			"date": ["May", "June 2021"],
@@ -64,7 +97,10 @@
 				"MongoDB",
 				"JavaScript",
 				"REST API"
-			]
+			],
+			"links": {
+				"github": "https://github.com/SBTopZZZ-LG/Quicc-Android"
+			}
 		}
 	]
 }
