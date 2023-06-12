@@ -2,12 +2,14 @@ import React from "react";
 
 import Card from "../../Components/Card";
 
+import data from "../../Assets/Datasets/aboutMePage.json";
+
 import "./EducationCard.css";
 
 const Tile = ({
 	dateRange = ["Jan 1970", "Jun 1970"],
 	title = "Job",
-	company = "Company",
+	organization = "Organization",
 }) => {
 	return (
 		<div style={{
@@ -31,7 +33,7 @@ const Tile = ({
 				color: "#858585",
 				fontWeight: "500",
 				fontSize: "15px",
-			}}>{company}</span>
+			}}>{organization}</span>
 		</div>
 	);
 };
@@ -69,17 +71,14 @@ const EducationCard = ({ style = {} }) => {
 				</a>
 			</div>
 
-			<Tile
-				dateRange={["2020", "2024"]}
-				title="Bachelor Degree in Computer Science"
-				company="KLS Gogte Institute of Technology, Belagavi"
-			/>
-
-			<Tile
-				dateRange={["2018", "2020"]}
-				title="Pre-University"
-				company="SKE Govindram Seksaria Science College, Belagavi"
-			/>
+			{data.educationCard.map(data => (
+				<Tile
+					key={data.date}
+					dateRange={data.date}
+					title={data.title}
+					organization={data.organization}
+				/>
+			))}
 		</Card>
 	);
 };

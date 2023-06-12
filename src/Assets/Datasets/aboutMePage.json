@@ -1,0 +1,73 @@
+{
+	"infoCard": {
+		"headline": "Software Development Intern @ Tharasis",
+		"bio": "I am a dedicated full-stack developer proficient with React, Flutter, and Node.js. I am also a UI/UX designer for web and mobile apps. I am a 3rd year Computer Science student studying at KLS GIT."
+	},
+	"experienceCard": [
+		{
+			"date": ["March 2023", "Present"],
+			"title": "Flutter Development Intern",
+			"company": "Tharasis (Part-time)"
+		},
+		{
+			"date": ["March", "June 2022"],
+			"title": "Node.js Development Intern",
+			"company": "Forty4Hz"
+		}
+	],
+	"educationCard": [
+		{
+			"date": ["2020", "2024"],
+			"title": "Bachelor Degree in Computer Science",
+			"organization": "KLS Gogte Institute of Technology, Belagavi"
+		},
+		{
+			"date": ["2018", "2020"],
+			"title": "Pre-University",
+			"organization": "SKE Govindram Seksaria Science College, Belagavi"
+		}
+	],
+	"certifications": [
+		{
+			"code": "UC-bc1fdc96-308e-4abe-a9b3-17b307315f7c",
+			"title": "Flutter & Dart",
+			"organization": "Academind"
+		},
+		{
+			"code": "UC-02959054-5730-47e5-bfb9-6aeee10a601d",
+			"title": "Complete Node.js Developer",
+			"organization": "Udemy"
+		},
+		{
+			"code": "UC-8b940003-b1dd-44bf-a387-64af9c56eac2",
+			"title": "Data Structures + Algorithms",
+			"organization": "Zero To Mastery Academy"
+		}
+	],
+	"skillsCard": [
+		{
+			"title": "Flutter",
+			"strength": 90
+		},
+		{
+			"title": "React",
+			"strength": 78
+		},
+		{
+			"title": "Node.js",
+			"strength": 97
+		},
+		{
+			"title": "Figma",
+			"strength": 85
+		},
+		{
+			"title": "JavaScript",
+			"strength": 94
+		},
+		{
+			"title": "Java",
+			"strength": 94
+		}
+	]
+}

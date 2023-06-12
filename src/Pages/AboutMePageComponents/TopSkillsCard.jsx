@@ -2,6 +2,8 @@ import React from "react";
 
 import Card from "../../Components/Card";
 
+import data from "../../Assets/Datasets/aboutMePage.json";
+
 import "./TopSkillsCard.css";
 
 const Tile = ({
@@ -70,12 +72,9 @@ const TopSkillsCard = ({ style = {} }) => {
 				columnGap: "68px",
 				rowGap: "35px",
 			}}>
-				<Tile title="Flutter" strength="90" />
-				<Tile title="React" strength="78" />
-				<Tile title="Node.js" strength="97" />
-				<Tile title="Figma" strength="85" />
-				<Tile title="JavaScript" strength="94" />
-				<Tile title="Java" strength="94" />
+				{data.skillsCard.slice(0, 6).map(data => (
+					<Tile key={data.title} title={data.title} strength={data.strength} />
+				))}
 			</div>
 		</Card>
 	);

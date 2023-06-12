@@ -1,0 +1,70 @@
+{
+	"projects": [
+		{
+			"date": ["May", "June 2023"],
+			"title": "Portfolio Website",
+			"skills": ["React", "Figma", "HTML5", "CSS", "JavaScript"]
+		},
+		{
+			"date": ["February", "March 2023"],
+			"title": "Aura 23 Website",
+			"skills": [
+				"React",
+				"Node.js",
+				"MongoDB",
+				"Micro-services",
+				"JavaScript",
+				"REST API"
+			]
+		},
+		{
+			"date": ["November 2022", "February 2023"],
+			"title": "CodeCollab",
+			"skills": ["Java", "Socket Programming"]
+		},
+		{
+			"date": ["October", "November 2022"],
+			"title": "Flutter package: render_box_exposed",
+			"skills": ["Flutter", "Dart"]
+		},
+		{
+			"date": ["September 2022"],
+			"title": "Archivit",
+			"skills": ["Java"]
+		},
+		{
+			"date": ["February 2022"],
+			"title": "Blog.io",
+			"skills": ["HTML5", "CSS", "Node.js", "MongoDB", "JavaScript", "REST API"]
+		},
+		{
+			"date": ["January 2022"],
+			"title": "Email Scheduler v2",
+			"skills": ["Java"]
+		},
+		{
+			"date": ["June", "July 2021"],
+			"title": "ClipIt",
+			"skills": [
+				"Flutter",
+				"Node.js",
+				"MongoDB",
+				"Dart",
+				"JavaScript",
+				"REST API"
+			]
+		},
+		{
+			"date": ["May", "June 2021"],
+			"title": "SpeedPost",
+			"skills": [
+				"Android",
+				"Java",
+				"Node.js",
+				"MongoDB",
+				"JavaScript",
+				"REST API"
+			]
+		}
+	]
+}

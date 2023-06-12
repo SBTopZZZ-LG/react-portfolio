@@ -2,6 +2,8 @@ import React from "react";
 
 import Card from "../../Components/Card";
 
+import data from "../../Assets/Datasets/aboutMePage.json";
+
 import "./TopCertificationsCard.css";
 
 const Tile = ({
@@ -65,23 +67,14 @@ const TopCertificationsCard = ({ style = {} }) => {
 					}}>TOP CERTIFICATIONS</span>
 				</div>
 
-				<Tile
-					certificate_code="UC-bc1fdc96-308e-4abe-a9b3-17b307315f7c"
-					title="Flutter & Dart"
-					organization="Academind"
-				/>
-
-				<Tile
-					certificate_code="UC-02959054-5730-47e5-bfb9-6aeee10a601d"
-					title="Complete Node.js Developer"
-					organization="Udemy"
-				/>
-
-				<Tile
-					certificate_code="UC-8b940003-b1dd-44bf-a387-64af9c56eac2"
-					title="Data Structures + Algorithms"
-					organization="Zero To Mastery Academy"
-				/>
+				{data.certifications.map(data => (
+					<Tile
+						key={data.code}
+						certificate_code={data.code}
+						title={data.title}
+						organization={data.organization}
+					/>
+				))}
 			</div>
 		</Card>
 	);
