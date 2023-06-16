@@ -6,7 +6,7 @@ import { VMGap } from "../../Components/Gap";
 import Signature from "../../Assets/Images/signature.svg";
 
 const AboutMeCard = ({
-	noObserverFadeIn = true,
+	noObserverFadeIn = false,
 	style = {},
 }) => {
 	return (

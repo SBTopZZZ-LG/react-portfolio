@@ -5,7 +5,7 @@ import Card from "../../Components/Card";
 import Illustration from "../../Assets/Images/Projects.svg";
 
 const ProjectsCard = ({
-	noObserverFadeIn = true,
+	noObserverFadeIn = false,
 	style = {},
 }) => {
 	return (

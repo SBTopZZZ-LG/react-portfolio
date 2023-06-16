@@ -11,7 +11,7 @@ import Twitter from "../../Assets/Images/Twitter.svg";
 import "./SocialsCard.css";
 
 const SocialsCard = ({
-	noObserverFadeIn = true,
+	noObserverFadeIn = false,
 	style = {},
 }) => {
 	return (

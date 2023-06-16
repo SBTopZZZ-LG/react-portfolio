@@ -3,7 +3,7 @@ import React from "react";
 import Card from "../../Components/Card";
 
 const StatsCard = ({
-	noObserverFadeIn = true,
+	noObserverFadeIn = false,
 	style = {},
 	column = false,
 }) => {
@@ -24,6 +24,7 @@ const StatsCard = ({
 			<Card
 				height="auto"
 				hoverAnimation={false}
+				noObserverFadeIn={true}
 				style={{
 					alignItems: "center",
 					flexBasis: "0",
@@ -69,6 +70,7 @@ const StatsCard = ({
 			<Card
 				height="auto"
 				hoverAnimation={false}
+				noObserverFadeIn={true}
 				style={{
 					alignItems: "center",
 					flexBasis: "0",
@@ -114,6 +116,7 @@ const StatsCard = ({
 			<Card
 				height="auto"
 				hoverAnimation={false}
+				noObserverFadeIn={true}
 				style={{
 					alignItems: "center",
 					flexBasis: "0",
