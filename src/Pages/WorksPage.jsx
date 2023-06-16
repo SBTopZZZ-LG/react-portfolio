@@ -14,69 +14,75 @@ const Tile = ({
 	links = {},
 }) => {
 	return (
-		<div style={{
-			display: "flex",
-			flexDirection: "column",
-			gap: "5px",
-			justifyContent: "space-around",
-		}}>
-			<span style={{
-				color: "#858585",
-				fontWeight: "500",
-				fontSize: "15px",
-			}}>{`${dateRange[0]}${dateRange.length > 1 ? ` - ${dateRange[1]}` : ""}`}</span>
+		<Card
+			hoverable={true}
+			hoverAnimation={false}
+			style={{ width: "auto" }}
+		>
+			<div style={{
+				display: "flex",
+				flexDirection: "column",
+				gap: "5px",
+				justifyContent: "space-around",
+			}}>
+				<span style={{
+					color: "#858585",
+					fontWeight: "500",
+					fontSize: "15px",
+				}}>{`${dateRange[0]}${dateRange.length > 1 ? ` - ${dateRange[1]}` : ""}`}</span>
 
-			<span className="white" style={{
-				fontWeight: "600",
-				fontSize: "22px",
-			}}>{title}</span>
+				<span className="white" style={{
+					fontWeight: "600",
+					fontSize: "22px",
+				}}>{title}</span>
 
-			{skills.length > 0 && <span style={{
-				color: "#858585",
-				fontWeight: "500",
-				fontSize: "15px",
-				marginTop: "13px",
-			}}>Skills: {skills.join(", ")}</span>}
+				{skills.length > 0 && <span style={{
+					color: "#858585",
+					fontWeight: "500",
+					fontSize: "15px",
+					marginTop: "13px",
+				}}>Skills: {skills.join(", ")}</span>}
 
-			{("github" in links || "url" in links) &&
-				<div style={{
-					display: "flex",
-					alignItems: "center",
-					marginTop: "18px",
-					gap: "20px",
-				}}>
-					{"github" in links &&
-						<a
-							href={links.github}
-							style={{ all: "unset", cursor: "pointer" }}
-							target="_blank"
-							rel="noreferrer"
-						>
-							<img
-								className="svg"
-								src={GitHub}
-								alt="GitHub"
-								height={35}
-							/>
-						</a>
-					}
-					{"url" in links &&
-						<a
-							href={links.url}
-							style={{ all: "unset", cursor: "pointer" }}
-							target="_blank"
-							rel="noreferrer"
-						>
-							<img
-								className="svg"
-								src={Url}
-								alt="Url"
-								height={35}
-							/>
-						</a>
-					}
-				</div>}
-		</div>
+				{("github" in links || "url" in links) &&
+					<div style={{
+						display: "flex",
+						alignItems: "center",
+						marginTop: "18px",
+						gap: "20px",
+					}}>
+						{"github" in links &&
+							<a
+								href={links.github}
+								style={{ all: "unset", cursor: "pointer" }}
+								target="_blank"
+								rel="noreferrer"
+							>
+								<img
+									className="svg"
+									src={GitHub}
+									alt="GitHub"
+									height={35}
+								/>
+							</a>
+						}
+						{"url" in links &&
+							<a
+								href={links.url}
+								style={{ all: "unset", cursor: "pointer" }}
+								target="_blank"
+								rel="noreferrer"
+							>
+								<img
+									className="svg"
+									src={Url}
+									alt="Url"
+									height={35}
+								/>
+							</a>
+						}
+					</div>}
+			</div>
+		</Card>
 	);
 };
 
@@ -103,14 +109,13 @@ const Works = () => {
 				</span>
 
 				{data.projects.map(data => (
-					<Card key={data.title} hoverable={true} style={{ width: "auto" }}>
-						<Tile
-							dateRange={data.date}
-							title={data.title}
-							skills={data.skills}
-							links={data.links}
-						/>
-					</Card>
+					<Tile
+						key={data.title}
+						dateRange={data.date}
+						title={data.title}
+						skills={data.skills}
+						links={data.links}
+					/>
 				))}
 			</div>
 		</div>
