@@ -9,7 +9,7 @@ import Words from "../../Assets/Datasets/words.json";
 import "./MarqueeCard.css";
 
 const MarqueeCard = ({
-	noObserverFadeIn = true,
+	noObserverFadeIn = false,
 	strings = Words,
 	style = {},
 }) => {

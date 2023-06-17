@@ -51,9 +51,6 @@ const Card = ({
 	const handleMouseOut = () => setRotate({ rotateX: 0, rotateY: 0 });
 
 	useEffect(() => {
-		if (!hoverAnimation)
-			return;
-
 		const observer = new IntersectionObserver(
 			([entry]) => {
 				if (shouldFadeIn) return;
@@ -75,7 +72,7 @@ const Card = ({
 	return (
 		<div
 			ref={cardRef}
-			className={`card-2 ${hoverable ? "card" : "card2"} ${shouldFadeIn ? "fade-in" : ""}`}
+			className={`card card-2 ${hoverable ? "card-hover" : ""} ${!noObserverFadeIn ? "hidden" : ""} ${shouldFadeIn && !noObserverFadeIn ? "fade-in" : ""}`}
 			style={{
 				...(width === undefined ? { width: "fit-content" } : { width: (typeof width === "string" ? width : `${width}px`) }),
 				...(height === undefined ? { height: "fit-content" } : { height: (typeof height === "string" ? height : `${height}px`) }),

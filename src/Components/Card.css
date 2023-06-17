@@ -1,3 +1,7 @@
+.hidden {
+	opacity: 0;
+}
+
 /* Card */
 .card {
 	background: linear-gradient(135deg, #262626 0%, rgba(72, 72, 72, 0) 100%);
@@ -7,24 +11,23 @@
 	flex-direction: row;
 	font-size: 14.5px;
 	font-weight: 600;
-	opacity: 0;
 	padding: 35px;
 	transition: 300ms ease-out;
 }
 
-.card:hover {
+.card-hover:hover {
 	background: rgb(219, 219, 219);
 	transition: 300ms ease-out;
 }
 
 /* Texts */
-.card:hover .white {
+.card-hover:hover .white {
 	color: black;
 	transition: 300ms ease-out;
 }
 
 /* Images */
-.card:hover .svg {
+.card-hover:hover .svg {
 	filter: invert(100%);
 	transition: 300ms ease-out;
 }
@@ -34,26 +37,8 @@
 	background: linear-gradient(135deg, #383838 0%, rgba(72, 72, 72, 0) 100%);
 }
 
-.card:hover .card-2 {
+.card-hover:hover .card-2 {
 	background: transparent;
-}
-
-/* Card 2 */
-.card2 {
-	background: linear-gradient(135deg, #262626 0%, rgba(72, 72, 72, 0) 100%);
-	border-radius: 25px;
-	color: white;
-	display: flex;
-	flex-direction: row;
-	font-size: 14.5px;
-	font-weight: bold;
-	padding: 35px;
-	transition: 300ms ease-in-out;
-}
-
-/* Embedded card */
-.card2 .card-2 {
-	background: linear-gradient(135deg, #383838 0%, rgba(72, 72, 72, 0) 100%);
 }
 
 /* Animations */

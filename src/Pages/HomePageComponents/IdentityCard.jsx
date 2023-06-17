@@ -9,7 +9,7 @@ import Resume from "../../Assets/Files/Resume.pdf";
 import "./IdentityCard.css";
 
 const IdentityCard = ({
-	noObserverFadeIn = true,
+	noObserverFadeIn = false,
 	style = {},
 	column = false,
 }) => {

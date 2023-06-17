@@ -7,7 +7,7 @@ import Card from "../../Components/Card";
 import { VGap } from "../../Components/Gap";
 
 const EducationCard = ({
-	noObserverFadeIn = true,
+	noObserverFadeIn = false,
 	style = {},
 }) => {
 	return (
