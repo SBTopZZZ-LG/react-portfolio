@@ -6,11 +6,13 @@ import data from "../Assets/Datasets/worksPage.json";
 
 import GitHub from "../Assets/Images/GitHub.svg";
 import Url from "../Assets/Images/Web.svg";
+import Flutter from "../Assets/Images/flutter-icon.svg";
 
 const Tile = ({
 	dateRange = ["Jan 1970", "Jun 1970"],
 	title = "Project",
 	skills = ["Skill 1", "Skill 2"],
+	description = "Description",
 	links = {},
 }) => {
 	return (
@@ -25,17 +27,20 @@ const Tile = ({
 				gap: "5px",
 				justifyContent: "space-around",
 			}}>
+				{/* Timeline */}
 				<span style={{
 					color: "#858585",
 					fontWeight: "500",
 					fontSize: "15px",
 				}}>{`${dateRange[0]}${dateRange.length > 1 ? ` - ${dateRange[1]}` : ""}`}</span>
 
+				{/* Title */}
 				<span className="white" style={{
 					fontWeight: "600",
 					fontSize: "22px",
 				}}>{title}</span>
 
+				{/* Skills */}
 				{skills.length > 0 && <span style={{
 					color: "#858585",
 					fontWeight: "500",
@@ -43,7 +48,26 @@ const Tile = ({
 					marginTop: "13px",
 				}}>Skills: {skills.join(", ")}</span>}
 
-				{("github" in links || "url" in links) &&
+				{/* Description */}
+				<div style={{ marginTop: "13px" }}>
+					{
+						skills.length > 0 && <span style={{
+							color: "#858585",
+							fontWeight: "500",
+							fontSize: "15px",
+						}}>
+							{description.map((content, index) => {
+								if (index === 0)
+									return <>{content}</>;
+								return <><br /><br />{content}</>;
+							})}
+						</span>
+					}
+				</div>
+
+				{/* Links */}
+				{
+					("github" in links || "url" in links || "pub.dev" in links) &&
 					<div style={{
 						display: "flex",
 						alignItems: "center",
@@ -80,7 +104,23 @@ const Tile = ({
 								/>
 							</a>
 						}
-					</div>}
+						{"pub.dev" in links &&
+							<a
+								href={links["pub.dev"]}
+								style={{ all: "unset", cursor: "pointer" }}
+								target="_blank"
+								rel="noreferrer"
+							>
+								<img
+									className="svg"
+									src={Flutter}
+									alt="Flutter"
+									height={35}
+								/>
+							</a>
+						}
+					</div>
+				}
 			</div>
 		</Card>
 	);
@@ -115,6 +155,7 @@ const Works = () => {
 						title={data.title}
 						skills={data.skills}
 						links={data.links}
+						description={data.description}
 					/>
 				))}
 			</div>
