@@ -1,11 +1,11 @@
 {
 	"infoCard": {
-		"headline": "Software Development Intern @ Tharasis",
+		"headline": "Student @ KLS GIT",
 		"bio": "I am a dedicated full-stack developer proficient with React, Flutter, and Node.js. I am also a UI/UX designer for web and mobile apps. I am a 3rd year Computer Science student studying at KLS GIT."
 	},
 	"experienceCard": [
 		{
-			"date": ["April 2023", "June 2023"],
+			"date": ["April 2023", "July 2023"],
 			"title": "Flutter Development Intern",
 			"company": "Tharasis (Part-time)"
 		},
