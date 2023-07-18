@@ -138,6 +138,11 @@ body,
 	height: 100%;
 }
 
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 50px;
+}
+
 body {
 	background-color: #161616;
 	margin: 0;
