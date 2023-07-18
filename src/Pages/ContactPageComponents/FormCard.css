@@ -12,6 +12,26 @@ textarea {
 	padding: 14px 23px;
 }
 
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	color: white;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+	color: white;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+	color: white;
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+	color: white;
+}
+
 input::placeholder,
 textarea::placeholder {
 	color: white;
