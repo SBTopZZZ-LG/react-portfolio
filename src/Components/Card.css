@@ -28,6 +28,7 @@
 
 /* Images */
 .card-hover:hover .svg {
+	-webkit-filter: invert(100%);
 	filter: invert(100%);
 	transition: 300ms ease-out;
 }
@@ -44,7 +45,23 @@
 /* Animations */
 .fade-in {
 	opacity: 0;
+	-webkit-animation: fade-in-anim 1s forwards;
 	animation: fade-in-anim 1s forwards;
+}
+
+@-webkit-keyframes fade-in-anim {
+	from {
+		opacity: 0;
+		scale: 80%;
+		translate: 0px 50px;
+	}
+	to {
+		-webkit-animation-timing-function: ease-out;
+		animation-timing-function: ease-out;
+		opacity: 1;
+		scale: 100%;
+		translate: 0px 0px;
+	}
 }
 
 @keyframes fade-in-anim {
@@ -54,6 +71,7 @@
 		translate: 0px 50px;
 	}
 	to {
+		-webkit-animation-timing-function: ease-out;
 		animation-timing-function: ease-out;
 		opacity: 1;
 		scale: 100%;
