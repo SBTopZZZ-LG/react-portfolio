@@ -4,8 +4,9 @@ import { useLocation } from "react-router-dom";
 import MyCard from "./CredentialsPageComponents/MyCard";
 
 import { VGap } from "../Components/Gap";
+import Attachment from "../Components/Attachment";
 
-import data from "../Assets/Datasets/credentialsPage.json";
+import data from "../Assets/Datasets/credentialsPage.js";
 
 import "./CredentialsPage.css";
 
@@ -138,12 +139,21 @@ const CredentialsPage = () => {
 						<span id="about-me-section" className="title">ABOUT ME</span>
 						<div className="content">
 							<span style={{ color: "#c2c2c2" }}>
-								{data.aboutMe.map((content, index) => {
+								{data.aboutMe.body.map((content, index) => {
 									if (index === 0)
 										return <>{content}</>;
 									return <><br /><br />{content}</>;
 								})}
 							</span>
+
+							{data.aboutMe.attachments.map(attachment => (
+								<Attachment
+									key={attachment.name}
+									name={attachment.name}
+									file={attachment.file}
+									size={attachment.size}
+								/>
+							))}
 						</div>
 
 						<span id="experience-section" className="title">EXPERIENCE</span>
@@ -163,6 +173,15 @@ const CredentialsPage = () => {
 											return <><br /><br />{content}</>;
 										})}
 									</span>
+
+									{data.attachments.map(attachment => (
+										<Attachment
+											key={attachment.name}
+											name={attachment.name}
+											file={attachment.file}
+											size={attachment.size}
+										/>
+									))}
 								</Tile>
 							)).map((tile, index) => {
 								if (index === 0)
@@ -188,6 +207,15 @@ const CredentialsPage = () => {
 											return <><br /><br />{content}</>;
 										})}
 									</span>
+
+									{data.attachments.map(attachment => (
+										<Attachment
+											key={attachment.name}
+											name={attachment.name}
+											file={attachment.file}
+											size={attachment.size}
+										/>
+									))}
 								</Tile>
 							)).map((tile, index) => {
 								if (index === 0)
