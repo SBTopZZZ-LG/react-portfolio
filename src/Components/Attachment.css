@@ -1,0 +1,25 @@
+.attachment-card {
+	margin-top: 10px;
+
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.attachment-card .content {
+	display: flex;
+	flex-direction: column;
+
+	margin-left: 15px;
+
+	gap: 5px;
+}
+
+.file-name {
+	font-weight: 600;
+}
+
+.file-size {
+	font-weight: 400;
+	color: #c2c2c2;
+}
