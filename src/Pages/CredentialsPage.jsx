@@ -5,7 +5,7 @@ import MyCard from "./CredentialsPageComponents/MyCard";
 
 import { VGap } from "../Components/Gap";
 
-import data from "../Assets/Datasets/credentialsPage.json";
+import data from "../Assets/Datasets/credentialsPage.js";
 
 import "./CredentialsPage.css";
 

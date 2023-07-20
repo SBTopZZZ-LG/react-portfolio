@@ -1,4 +1,4 @@
-{
+const dataset = {
 	"aboutMe": [
 		"I am Saumitra Topinkatti, a dedicated and driven student of Computer Science, always seeking new challenges and opportunities for growth. With a passion for technology, an appreciation for thought-provoking movies, and a penchant for solving puzzles, I am eagerly embracing the future and all the possibilities it holds.",
 		"I am excited to contribute my skills, knowledge, and enthusiasm to make a positive impact in the ever-evolving world of technology."
@@ -105,4 +105,6 @@
 			"strength": 77
 		}
 	]
-}
+};
+
+export default dataset;
