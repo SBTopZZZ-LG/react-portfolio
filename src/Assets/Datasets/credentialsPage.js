@@ -35,7 +35,7 @@ const dataset = {
 					"size": "156 KB"
 				},
 				{
-					"name": "Recommendation Letter.png",
+					"name": "Recommendation Letter.pdf",
 					"file": TharasisRC,
 					"size": "33 KB"
 				}
