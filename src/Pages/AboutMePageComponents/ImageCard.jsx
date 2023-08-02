@@ -13,7 +13,8 @@ const ImageCard = ({
 			style={{
 				aspectRatio: "1 / 1",
 				display: "grid",
-				...style
+				maxHeight: "300px",
+				...style,
 			}}
 		>
 			<img
