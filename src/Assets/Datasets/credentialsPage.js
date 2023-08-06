@@ -19,7 +19,7 @@ const dataset = {
 	},
 	"experience": [
 		{
-			"date": ["April 2023", "July 2023"],
+			"date": ["April", "July 2023"],
 			"title": "Flutter Development Intern",
 			"company": "Tharasis (Part-time)",
 			"description": [
