@@ -48,10 +48,26 @@ const ExperienceCard = ({ style = {} }) => {
 				...style,
 			}}
 		>
-			<span className="white" style={{
-				fontWeight: "600",
-				fontSize: "15px",
-			}}>EXPERIENCE</span>
+			<div style={{
+				alignItems: "center",
+				display: "flex",
+				justifyContent: "space-between",
+			}}>
+				<span className="white" style={{
+					fontWeight: "600",
+					fontSize: "15px",
+				}}>EXPERIENCE</span>
+
+				<a
+					href="/credentials#experience"
+					style={{ all: "unset", cursor: "pointer" }}
+				>
+					<span className="view-all" style={{
+						fontWeight: "600",
+						fontSize: "15px",
+					}}>View All</span>
+				</a>
+			</div>
 
 			{data.experienceCard.map(data => (
 				<Tile

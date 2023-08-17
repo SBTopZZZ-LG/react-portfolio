@@ -1,18 +1,18 @@
 {
 	"infoCard": {
-		"headline": "Student @ KLS GIT",
+		"headline": "Full Stack Development Intern @ DataDays | Student @ KLS GIT",
 		"bio": "I am a dedicated full-stack developer proficient with React, Flutter, and Node.js. I am also a UI/UX designer for web and mobile apps. I am a 3rd year Computer Science student studying at KLS GIT."
 	},
 	"experienceCard": [
 		{
+			"date": ["August 2023", "Present"],
+			"title": "Full Stack Development Intern",
+			"company": "DataDays"
+		},
+		{
 			"date": ["April", "July 2023"],
 			"title": "Flutter Development Intern",
 			"company": "Tharasis (Part-time)"
-		},
-		{
-			"date": ["March", "June 2022"],
-			"title": "Node.js Development Intern",
-			"company": "Forty4Hz"
 		}
 	],
 	"educationCard": [
