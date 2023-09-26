@@ -2,7 +2,7 @@ import React from "react";
 
 import Card from "../../Components/Card";
 
-import Avatar from "../../Assets/Images/picture.png";
+import Avatar from "../../Assets/Images/picture2.jpg";
 import LinkedIn from "../../Assets/Images/LinkedIn-white.svg";
 import Instagram from "../../Assets/Images/Instagram.svg";
 import GitHub from "../../Assets/Images/GitHub.svg";
@@ -26,6 +26,10 @@ const MyCard = ({ style = {} }) => {
 				src={Avatar}
 				alt="Avatar"
 				width={200}
+				style={{
+					borderTopLeftRadius: "20px",
+					borderBottomRightRadius: "20px",
+				}}
 			/>
 
 			<span className="white" style={{

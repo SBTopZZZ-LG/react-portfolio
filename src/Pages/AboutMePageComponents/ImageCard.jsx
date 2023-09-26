@@ -2,7 +2,7 @@ import React from "react";
 
 import Card from "../../Components/Card";
 
-import Avatar from "../../Assets/Images/picture.png";
+import Avatar from "../../Assets/Images/picture2.jpg";
 
 const ImageCard = ({
 	style = {},
@@ -10,10 +10,13 @@ const ImageCard = ({
 	return (
 		<Card
 			hoverable={true}
+			width={300}
+			height={300}
 			style={{
 				aspectRatio: "1 / 1",
 				display: "grid",
 				maxHeight: "300px",
+				position: "relative",
 				...style,
 			}}
 		>
@@ -21,8 +24,10 @@ const ImageCard = ({
 				className="prevent-select"
 				src={Avatar}
 				alt="Avatar"
-				height="100%"
-				style={{ aspectRatio: "1 / 1" }}
+				style={{
+					aspectRatio: "1 / 1",
+					height: "230px",
+				}}
 			/>
 		</Card>
 	);

@@ -3,7 +3,7 @@ import React from "react";
 import Card from "../../Components/Card";
 import { HMGap, VMGap } from "../../Components/Gap";
 
-import Avatar from "../../Assets/Images/picture.png";
+import Avatar from "../../Assets/Images/picture2.jpg";
 import Resume from "../../Assets/Files/Resume.pdf";
 
 import "./IdentityCard.css";
@@ -30,9 +30,18 @@ const IdentityCard = ({
 			}}
 			onClick={() => window.location.href = "/about-me"}
 		>
-			<img className="prevent-select" src={Avatar} alt="Avatar" width="auto" height="160vh" style={{
-				transform: "translateZ(50px)",
-			}} />
+			<img
+				className="prevent-select"
+				src={Avatar}
+				alt="Avatar"
+				width="auto"
+				height="160vh"
+				style={{
+					transform: "translateZ(50px)",
+					borderTopLeftRadius: "20px",
+					borderBottomRightRadius: "20px",
+				}}
+			/>
 
 			<HMGap
 				gap={column ? 0 : 35}
