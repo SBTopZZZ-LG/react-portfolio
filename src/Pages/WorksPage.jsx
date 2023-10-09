@@ -7,6 +7,7 @@ import data from "../Assets/Datasets/worksPage.json";
 import GitHub from "../Assets/Images/GitHub.svg";
 import Url from "../Assets/Images/Web.svg";
 import Flutter from "../Assets/Images/flutter-icon.svg";
+import Discord from "../Assets/Images/Discord-white.svg";
 
 const Tile = ({
 	dateRange = ["Jan 1970", "Jun 1970"],
@@ -115,6 +116,21 @@ const Tile = ({
 									className="svg"
 									src={Flutter}
 									alt="Flutter"
+									height={35}
+								/>
+							</a>
+						}
+						{"discord" in links &&
+							<a
+								href={links["discord"]}
+								style={{ all: "unset", cursor: "pointer" }}
+								target="_blank"
+								rel="noreferrer"
+							>
+								<img
+									className="svg"
+									src={Discord}
+									alt="Discord"
 									height={35}
 								/>
 							</a>
