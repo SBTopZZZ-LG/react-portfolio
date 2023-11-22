@@ -2,6 +2,23 @@
 	"projects": [
 		{
 			"date": [
+				"November 2023"
+			],
+			"title": "Npmjs package: react-use-latest-state",
+			"skills": [
+				"React",
+				"TypeScript"
+			],
+			"description": [
+				"A lightweight React package that enhances the reliability of state values within functional components."
+			],
+			"links": {
+				"github": "https://github.com/MakeItBuildIt/react_useLatestState",
+				"npmjs": "https://www.npmjs.com/package/react-use-latest-state"
+			}
+		},
+		{
+			"date": [
 				"October 2023"
 			],
 			"title": "Spell-iT Discord Bot",
