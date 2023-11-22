@@ -8,6 +8,7 @@ import GitHub from "../Assets/Images/GitHub.svg";
 import Url from "../Assets/Images/Web.svg";
 import Flutter from "../Assets/Images/flutter-icon.svg";
 import Discord from "../Assets/Images/Discord-white.svg";
+import NPM from "../Assets/Images/npm-white.svg";
 
 const Tile = ({
 	dateRange = ["Jan 1970", "Jun 1970"],
@@ -131,6 +132,21 @@ const Tile = ({
 									className="svg"
 									src={Discord}
 									alt="Discord"
+									height={35}
+								/>
+							</a>
+						}
+						{"npmjs" in links &&
+							<a
+								href={links["npmjs"]}
+								style={{ all: "unset", cursor: "pointer" }}
+								target="_blank"
+								rel="noreferrer"
+							>
+								<img
+									className="svg"
+									src={NPM}
+									alt="NPM"
 									height={35}
 								/>
 							</a>
