@@ -1,4 +1,5 @@
 import Resume from "../Files/Resume.pdf";
+import DataDaysRC from "../Files/DataDays - Recommendation Letter.pdf";
 import TharasisCoC from "../Files/Tharasis - Certificate of Completion.png";
 import TharasisRC from "../Files/Tharasis - Recommendation Letter.pdf";
 import UnifiedLoA from "../Files/Unified - Letter of Appreciation.pdf";
@@ -19,13 +20,17 @@ const dataset = {
 	},
 	experience: [
 		{
-			date: ["August 2023", "Present"],
+			date: ["August", "December 2023"],
 			title: "Full Stack Development Intern",
 			company: "DataDays",
-			description: [
-				"I am currently working as a Full Stack Development Intern at DataDays.",
+			description: [""],
+			attachments: [
+				{
+					name: "Recommendation Letter.pdf",
+					file: DataDaysRC,
+					size: "127 KB",
+				},
 			],
-			attachments: [],
 		},
 		{
 			date: ["April", "July 2023"],
