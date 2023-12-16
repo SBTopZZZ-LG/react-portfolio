@@ -1,28 +1,40 @@
 {
 	"infoCard": {
-		"headline": "Full Stack Development Intern @ DataDays | Student @ KLS GIT",
+		"headline": "Student @ KLS GIT",
 		"bio": "I am a dedicated full-stack developer proficient with React, Flutter, and Node.js. I am also a UI/UX designer for web and mobile apps. I am a 3rd year Computer Science student studying at KLS GIT."
 	},
 	"experienceCard": [
 		{
-			"date": ["August 2023", "Present"],
+			"date": [
+				"August",
+				"December 2023"
+			],
 			"title": "Full Stack Development Intern",
 			"company": "DataDays"
 		},
 		{
-			"date": ["April", "July 2023"],
+			"date": [
+				"April",
+				"July 2023"
+			],
 			"title": "Flutter Development Intern",
 			"company": "Tharasis (Part-time)"
 		}
 	],
 	"educationCard": [
 		{
-			"date": ["2020", "2024"],
+			"date": [
+				"2020",
+				"2024"
+			],
 			"title": "Bachelor Degree in Computer Science",
 			"organization": "KLS Gogte Institute of Technology, Belagavi"
 		},
 		{
-			"date": ["2018", "2020"],
+			"date": [
+				"2018",
+				"2020"
+			],
 			"title": "Pre-University",
 			"organization": "SKE Govindram Seksaria Science College, Belagavi"
 		}

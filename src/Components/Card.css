@@ -12,25 +12,22 @@
 	font-size: 14.5px;
 	font-weight: 600;
 	padding: 35px;
-	transition: 300ms ease-out;
+	transition: all 300ms ease-out;
 }
 
 .card-hover:hover {
 	background: rgb(219, 219, 219);
-	transition: 300ms ease-out;
 }
 
 /* Texts */
 .card-hover:hover .white {
 	color: black;
-	transition: 300ms ease-out;
 }
 
 /* Images */
 .card-hover:hover .svg {
 	-webkit-filter: invert(100%);
 	filter: invert(100%);
-	transition: 300ms ease-out;
 }
 
 /* Embedded card */
@@ -45,36 +42,28 @@
 /* Animations */
 .fade-in {
 	opacity: 0;
-	-webkit-animation: fade-in-anim 1s forwards;
-	animation: fade-in-anim 1s forwards;
+	-webkit-animation: fade-in-anim 1s ease-out forwards;
+	animation: fade-in-anim 1s ease-out forwards;
 }
 
 @-webkit-keyframes fade-in-anim {
-	from {
+	0% {
 		opacity: 0;
-		scale: 80%;
-		translate: 0px 50px;
+		transform: scale(80%) translateY(50px);
 	}
-	to {
-		-webkit-animation-timing-function: ease-out;
-		animation-timing-function: ease-out;
+	100% {
 		opacity: 1;
-		scale: 100%;
-		translate: 0px 0px;
+		transform: scale(100%) translateY(0px);
 	}
 }
 
 @keyframes fade-in-anim {
-	from {
+	0% {
 		opacity: 0;
-		scale: 80%;
-		translate: 0px 50px;
+		transform: scale(80%) translateY(50px);
 	}
-	to {
-		-webkit-animation-timing-function: ease-out;
-		animation-timing-function: ease-out;
+	100% {
 		opacity: 1;
-		scale: 100%;
-		translate: 0px 0px;
+		transform: scale(100%) translateY(0px);
 	}
 }
