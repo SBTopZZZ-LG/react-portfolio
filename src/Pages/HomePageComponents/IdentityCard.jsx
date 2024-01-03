@@ -5,6 +5,7 @@ import { HMGap, VMGap } from "../../Components/Gap";
 
 import Avatar from "../../Assets/Images/picture2.jpg";
 import Resume from "../../Assets/Files/Resume.pdf";
+import HomePageDataset from "../../Assets/Datasets/homePage.json";
 
 import "./IdentityCard.css";
 
@@ -56,7 +57,7 @@ const IdentityCard = ({
 					height: "100%",
 				}}>
 					<VMGap gap={column ? 15 : 0}>
-						<span className="white" style={{ color: "#858585" }}>A Full Stack Developer</span>
+						<span className="white" style={{ color: "#858585" }}>{HomePageDataset.headline}</span>
 					</VMGap>
 					<VMGap gap={5}>
 						<span className="white" style={{ fontSize: "31px" }}>

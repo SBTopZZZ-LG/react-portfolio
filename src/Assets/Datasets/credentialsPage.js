@@ -20,6 +20,13 @@ const dataset = {
 	},
 	experience: [
 		{
+			date: ["January 2024", "Present"],
+			title: "Software Development Intern",
+			company: "Infraspec",
+			description: [""],
+			attachments: [],
+		},
+		{
 			date: ["August", "December 2023"],
 			title: "Full Stack Development Intern",
 			company: "DataDays",
@@ -108,11 +115,11 @@ const dataset = {
 	skills: [
 		{
 			title: "Flutter",
-			strength: 90,
+			strength: 88,
 		},
 		{
 			title: "React",
-			strength: 78,
+			strength: 80,
 		},
 		{
 			title: "Node.js",
@@ -136,7 +143,7 @@ const dataset = {
 		},
 		{
 			title: "Microservices",
-			strength: 83,
+			strength: 85,
 		},
 		{
 			title: "C/C++",
@@ -148,11 +155,11 @@ const dataset = {
 		},
 		{
 			title: "MongoDB",
-			strength: 89,
+			strength: 90,
 		},
 		{
 			title: "Photoshop",
-			strength: 77,
+			strength: 79,
 		},
 	],
 };

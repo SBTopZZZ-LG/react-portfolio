@@ -2,6 +2,12 @@ import React from "react";
 
 import Card from "../../Components/Card";
 
+import { numPadding } from "../../Utils/padding";
+
+import HomePageDataset from "../../Assets/Datasets/homePage.json";
+import AboutMeDataset from "../../Assets/Datasets/aboutMePage.json";
+import WorksDataset from "../../Assets/Datasets/worksPage.json";
+
 const StatsCard = ({
 	noObserverFadeIn = false,
 	style = {},
@@ -46,7 +52,7 @@ const StatsCard = ({
 						fontWeight: "600",
 					}}
 				>
-					02
+					{numPadding(parseInt(HomePageDataset.experienceInYears, 10), 2)}
 				</span>
 
 				<span
@@ -92,7 +98,7 @@ const StatsCard = ({
 						fontWeight: "600"
 					}}
 				>
-					11
+					{numPadding(WorksDataset.projects.length, 2)}
 				</span>
 
 				<span
@@ -138,7 +144,7 @@ const StatsCard = ({
 						fontWeight: "600",
 					}}
 				>
-					03
+					{numPadding(AboutMeDataset.certifications.length, 2)}
 				</span>
 
 				<span
