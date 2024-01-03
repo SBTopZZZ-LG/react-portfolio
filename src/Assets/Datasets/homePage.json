@@ -1,4 +1,18 @@
 {
   "headline": "A Software Engineer,",
-  "experienceInYears": "2"
+  "experienceInYears": "2",
+  "marqueeText": [
+    "Once upon a time, in a small town, a young individual embarked on a journey that would redefine the meaning of their existence. Growing up in the world of racing games and open-world adventures on a modest PC with 1 GB RAM and a 1.5 GHz processor, the allure of technology had already woven its magic.",
+    "In the 7th grade, a twist of fate introduced them to C programming, unlocking the door to a universe where the keystrokes crafted instructions, and the computer danced to their command. The fascination grew, sparking a burning curiosity about creating beautiful UIs for applications using the enigmatic C language.",
+    "As high school beckoned, traditional studies took a back seat to the quest for understanding the wizardry behind Windows software. The discovery of Microsoft Visual Studio and .NET in the 8th grade fueled a creative frenzy. Soon, SourceForge bore witness to the birth of their creations—Notepad, Web browser, File downloader, and a myriad of other software wonders.",
+    "A brotherly nudge led to a tryst with Android development in the 9th grade. The thrill of crafting intuitive UIs for Android devices became an addiction. As the elder sibling founded 1920 Inc., the budding coder found themselves entangled in the development of the \"PlatN\" product, contributing to Android code and mastering Java.",
+    "The world of Firebase and Parse server beckoned, and with a flair for innovation, they integrated these tools into their Android projects. Despite their penchant for starting more than finishing, a spark had been ignited.",
+    "Node.js entered the scene, unraveling the mysteries of client-server architecture. A month of online courses birthed a monstrous 10,000-line JS file—messy, unreadable, yet a testament to the journey's humble beginnings. MongoDB joined the ensemble, adding a layer of database magic to their Node.js projects.",
+    "Flutter fluttered into view, captivating the coder with its promise of multi-platform harmony. Online courses became the compass, guiding them through the creation of a stock market emulation app—a testament to their growing skills.",
+    "The university years ushered in Java, Swing API, and internships. Procrastination became an unwelcome companion during the first paid internship, a backend development role where Google Data API and YouTube Analytics became their playground.",
+    "A rocky path through mathematics and another internship—this time in a startup, testing applications on AWS Device Farm—fueled the coder's growth. A second internship, a full-stack role, provided insights into professionalism and project development sprints.",
+    "Undeterred by placement setbacks, they persevered and secured a job at Infraspec, a milestone applauded by family and friends. The final exams were conquered, marking the end of an academic era.",
+    "In a bid to broaden their horizons, React was embraced, and a portfolio website emerged as their first project. The desire for web development led them to Bengaluru for an internship at Infraspec, their first taste of independence.",
+    "As they navigated the bustling streets of Domlur, nerves were palpable, but determination shone brighter. The story continues, with code lines echoing in the silicon corridors, and the protagonist, armed with a keyboard and dreams, ready to script the next chapter of their extraordinary life."
+  ]
 }

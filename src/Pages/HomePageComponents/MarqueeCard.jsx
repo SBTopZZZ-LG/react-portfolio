@@ -4,13 +4,13 @@ import Marquee from "react-fast-marquee";
 import { HGap } from "../../Components/Gap";
 import Card from "../../Components/Card";
 
-import Words from "../../Assets/Datasets/words.json";
+import HomePageDataset from "../../Assets/Datasets/homePage.json";
 
 import "./MarqueeCard.css";
 
 const MarqueeCard = ({
 	noObserverFadeIn = false,
-	strings = Words,
+	strings = HomePageDataset.marqueeText,
 	style = {},
 }) => {
 	const dotDistance = 15;
@@ -42,7 +42,7 @@ const MarqueeCard = ({
 				...style,
 			}}
 		>
-			<Marquee speed={80}>
+			<Marquee delay={1} speed={80}>
 				<div className="marquee-content">
 					{marqueeContent}
 				</div>

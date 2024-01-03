@@ -1,9 +1,17 @@
 {
 	"infoCard": {
-		"headline": "Student @ KLS GIT",
-		"bio": "I am a dedicated full-stack developer proficient with React, Flutter, and Node.js. I am also a UI/UX designer for web and mobile apps. I am a 3rd year Computer Science student studying at KLS GIT."
+		"headline": "Software Development Intern @ Infraspec",
+		"bio": "I am a dedicated Software Engineer proficient with React, Flutter, and Node.js. I am also a UI/UX designer for web and mobile apps. I am a 3rd year Computer Science student studying at KLS GIT."
 	},
 	"experienceCard": [
+		{
+			"date": [
+				"January 2024",
+				"Present"
+			],
+			"title": "Software Development Intern",
+			"company": "Infraspec"
+		},
 		{
 			"date": [
 				"August",
@@ -11,14 +19,6 @@
 			],
 			"title": "Full Stack Development Intern",
 			"company": "DataDays"
-		},
-		{
-			"date": [
-				"April",
-				"July 2023"
-			],
-			"title": "Flutter Development Intern",
-			"company": "Tharasis (Part-time)"
 		}
 	],
 	"educationCard": [
@@ -59,11 +59,11 @@
 	"skillsCard": [
 		{
 			"title": "Flutter",
-			"strength": 90
+			"strength": 88
 		},
 		{
 			"title": "React",
-			"strength": 78
+			"strength": 80
 		},
 		{
 			"title": "Node.js",
