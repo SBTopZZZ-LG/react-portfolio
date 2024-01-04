@@ -1,8 +1,9 @@
 .marquee-content {
 	color: white;
 	display: inline-block;
-	font-size: 18px;
-	font-weight: 600;
+	font-family: "Marck Script", sans-serif;
+	font-size: 20px;
+	font-weight: 200;
 	margin: "0px 10px";
 }
 

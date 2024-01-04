@@ -21,6 +21,8 @@
 		U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
+
 * {
 	box-sizing: border-box;
 }
