@@ -56,6 +56,7 @@ const FormCard = ({ style = {} }) => {
 				<div
 					className="button button2"
 					onClick={onSubmit}
+					onKeyDown={onSubmit}
 				>
 					Submit
 				</div>
