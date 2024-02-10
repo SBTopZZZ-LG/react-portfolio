@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 import Card from "../../Components/Card";
 
+import ContactPageDataset from "../../Assets/Datasets/contactPage.json";
+
 import "./FormCard.css";
 
 const FormCard = ({ style = {} }) => {
@@ -10,7 +12,7 @@ const FormCard = ({ style = {} }) => {
 	const [message, setMessage] = useState("");
 
 	function onSubmit() {
-		window.open(`mailto:dev1912.sbtopzzz@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Hi, I am ${name}.\n\n${message}`)}`);
+		window.open(`mailto:${ContactPageDataset.contact_email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Hi, I am ${name}.\n\n${message}`)}`);
 	}
 
 	return (

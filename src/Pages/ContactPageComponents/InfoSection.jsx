@@ -9,6 +9,8 @@ import GitHub from "../../Assets/Images/GitHub.svg";
 import Instagram from "../../Assets/Images/Instagram.svg";
 import Twitter from "../../Assets/Images/Twitter-white.svg";
 
+import ContactPageDataset from "../../Assets/Datasets/contactPage.json";
+
 const InfoSection = () => {
 	return (
 		<div style={{
@@ -55,7 +57,7 @@ const InfoSection = () => {
 						}}>EMAIL ME</span>
 
 						<a
-							href="mailto:dev1912.sbtopzzz@gmail.com"
+							href={`mailto:${ContactPageDataset.contact_email}`}
 							target="_blank"
 							rel="noreferrer"
 							style={{
@@ -66,7 +68,7 @@ const InfoSection = () => {
 							<span style={{
 								fontSize: "16px",
 								fontWeight: "600",
-							}}>dev1912.sbtopzzz@gmail.com</span>
+							}}>{ContactPageDataset.contact_email}</span>
 						</a>
 					</div>
 				</div>
@@ -99,7 +101,7 @@ const InfoSection = () => {
 						}}>CALL ME</span>
 
 						<a
-							href="https://wa.me/919108424029"
+							href={`https://wa.me/${ContactPageDataset.contact_phone.cc}${ContactPageDataset.contact_phone.phone_no.split(/\s/).join("")}`}
 							target="_blank"
 							rel="noreferrer"
 							style={{
@@ -110,7 +112,7 @@ const InfoSection = () => {
 							<span style={{
 								fontSize: "16px",
 								fontWeight: "600",
-							}}>+91 91084 24029</span>
+							}}>+{ContactPageDataset.contact_phone.cc} {ContactPageDataset.contact_phone.phone_no}</span>
 						</a>
 					</div>
 				</div>
@@ -131,7 +133,7 @@ const InfoSection = () => {
 					gap: "25px",
 				}}>
 					<a
-						href="https://www.linkedin.com/in/saumitra-topinkatti-45a577208"
+						href={ContactPageDataset.socials.linkedin}
 						target="_blank"
 						rel="noreferrer"
 					>
@@ -149,7 +151,7 @@ const InfoSection = () => {
 					</a>
 
 					<a
-						href="https://github.com/SBTopZZZ-LG"
+						href={ContactPageDataset.socials.github}
 						target="_blank"
 						rel="noreferrer"
 					>
@@ -172,7 +174,7 @@ const InfoSection = () => {
 					gap: "25px",
 				}}>
 					<a
-						href="https://www.instagram.com/not_professor_oof"
+						href={ContactPageDataset.socials.instagram}
 						target="_blank"
 						rel="noreferrer"
 					>
@@ -190,7 +192,7 @@ const InfoSection = () => {
 					</a>
 
 					<a
-						href="https://twitter.com/sbtopzzz"
+						href={ContactPageDataset.socials.twitter}
 						target="_blank"
 						rel="noreferrer"
 					>
