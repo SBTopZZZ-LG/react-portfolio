@@ -30,7 +30,10 @@ const dataset = {
 			date: ["August", "December 2023"],
 			title: "Full Stack Development Intern",
 			company: "DataDays",
-			description: [""],
+			description: [
+				"During my internship at DataDays as a Full Stack Developer, my primary responsibilities revolved around constructing and managing critical components of the application using Node.js and Express. A significant aspect of my role involved enhancing the backend functionality by implementing efficient logging mechanisms and seamlessly integrating them with AWS S3 for streamlined log management.",
+				"Beyond coding, I actively engaged in familiarizing myself with the app's business plan, gaining insights into its purpose, competitive landscape, and development methodology. This involved understanding how we employed Agile methods and MVP principles throughout the development process, contributing to my overall professional growth and understanding of software development practices.",
+			],
 			attachments: [
 				{
 					name: "Recommendation Letter.pdf",
