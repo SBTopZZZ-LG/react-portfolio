@@ -2,6 +2,22 @@
 	"projects": [
 		{
 			"date": [
+				"January 2024",
+				"Present"
+			],
+			"title": "Raspberry Pi NetBoot with PXE and NFS",
+			"skills": [
+				"Operating System",
+				"Unix",
+				"Computer Networks"
+			],
+			"description": [
+				"The project facilitates PXE boot for Raspberry Pi (or similar systems) without requiring an SD Card, utilizing NFS for network storage."
+			],
+			"links": {}
+		},
+		{
+			"date": [
 				"November 2023"
 			],
 			"title": "Npmjs package: react-use-latest-state",
