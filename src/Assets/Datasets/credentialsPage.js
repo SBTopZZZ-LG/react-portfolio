@@ -1,5 +1,7 @@
 import Resume from "../Files/Resume.pdf";
+import InfraspecIC from "../Files/Infraspec - Internship Certificate.pdf";
 import DataDaysRC from "../Files/DataDays - Recommendation Letter.pdf";
+import DataDaysIC from "../Files/DataDays - Internship Certificate.pdf";
 import TharasisCoC from "../Files/Tharasis - Certificate of Completion.png";
 import TharasisRC from "../Files/Tharasis - Recommendation Letter.pdf";
 import UnifiedLoA from "../Files/Unified - Letter of Appreciation.pdf";
@@ -20,11 +22,21 @@ const dataset = {
 	},
 	experience: [
 		{
-			date: ["January 2024", "Present"],
+			date: ["January", "April 2024"],
 			title: "Software Development Intern",
 			company: "Infraspec",
-			description: [""],
-			attachments: [],
+			description: [
+				"During my internship at Infraspec, I engaged deeply with Agile methodologies, learning techniques like Pair Programming and Iterative Development. I worked on creating and refining user stories using the I.N.V.E.S.T criteria, which improved my team collaboration and project alignment skills. This exposure to practical Agile practices helped me understand the dynamics of efficient software development in a professional setting.",
+				"I also gained hands-on experience with Java’s JUnit 5 and Mockito for Automated Software Testing. This part of my internship focused on ensuring our code was robust and error-free, teaching me how to implement detailed unit and integration tests. Learning these testing frameworks provided me with the tools to uphold high standards of code quality, guided by clean code principles like S.O.L.I.D and Y.A.G.N.I.",
+				"I also had the opportunity to work with Java Spring Boot framework, which involved understanding application bootstrapping, bean management, and annotation utilization. Alongside this, I developed a Discord bot, applying my testing skills to ensure functionality through Mocha and Chai for unit tests and more comprehensive integration tests. This experience not only enhanced my software development skills but also equipped me with the practical knowledge to manage and execute complex software tasks efficiently.",
+			],
+			attachments: [
+				{
+					name: "Internship Certificate.pdf",
+					file: InfraspecIC,
+					size: "217 KB",
+				},
+			],
 		},
 		{
 			date: ["August", "December 2023"],
@@ -35,6 +47,11 @@ const dataset = {
 				"Beyond coding, I actively engaged in familiarizing myself with the app's business plan, gaining insights into its purpose, competitive landscape, and development methodology. This involved understanding how we employed Agile methods and MVP principles throughout the development process, contributing to my overall professional growth and understanding of software development practices.",
 			],
 			attachments: [
+				{
+					name: "Internship Certificate.pdf",
+					file: DataDaysIC,
+					size: "106 KB",
+				},
 				{
 					name: "Recommendation Letter.pdf",
 					file: DataDaysRC,
