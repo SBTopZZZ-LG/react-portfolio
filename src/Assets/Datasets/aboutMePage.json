@@ -1,13 +1,13 @@
 {
 	"infoCard": {
-		"headline": "Software Development Intern @ Infraspec",
-		"bio": "I am a dedicated Software Engineer proficient with React, Node.js, and Flutter. I'm excited to explore new technologies that can help solve real-world problems. I am a 4th year Computer Science student studying at KLS GIT."
+		"headline": "Software Developer",
+		"bio": "I am a dedicated Software Engineer proficient with React, Node.js, and Flutter. I'm excited to explore new technologies that can help solve real-world problems."
 	},
 	"experienceCard": [
 		{
 			"date": [
-				"January 2024",
-				"Present"
+				"January",
+				"April 2024"
 			],
 			"title": "Software Development Intern",
 			"company": "Infraspec"
