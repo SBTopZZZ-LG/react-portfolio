@@ -51,6 +51,7 @@
 		"babel-preset-react": "^6.24.1",
 		"babel-register": "^6.26.0",
 		"browserslist": "^4.22.1",
+		"sass": "^1.77.2",
 		"vite": "^5.2.11"
 	}
 }
