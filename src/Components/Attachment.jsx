@@ -2,7 +2,7 @@ import React from "react";
 
 import { Attachment as AttachmentIcon } from "@material-ui/icons";
 
-import "./Attachment.css";
+import "./Attachment.scss";
 
 /**
  * @param {{ name: string, size: string }} document_type Document Type

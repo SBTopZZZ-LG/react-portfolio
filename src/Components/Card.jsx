@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 
-import "./Card.css";
+import "./Card.scss";
 
 export const Padding = 35;
 

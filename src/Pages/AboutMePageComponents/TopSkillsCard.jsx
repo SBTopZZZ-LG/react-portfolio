@@ -4,7 +4,7 @@ import Card from "../../Components/Card";
 
 import data from "../../Assets/Datasets/aboutMePage.json";
 
-import "./TopSkillsCard.css";
+import "./TopSkillsCard.scss";
 
 const Tile = ({
 	title = "Tech",

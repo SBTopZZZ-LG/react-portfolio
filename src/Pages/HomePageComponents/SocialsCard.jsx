@@ -8,7 +8,7 @@ import Instagram from "../../Assets/Images/Instagram.svg";
 import Github from "../../Assets/Images/GitHub.svg";
 import Twitter from "../../Assets/Images/Twitter.svg";
 
-import "./SocialsCard.css";
+import "./SocialsCard.scss";
 
 const SocialsCard = ({
 	noObserverFadeIn = false,

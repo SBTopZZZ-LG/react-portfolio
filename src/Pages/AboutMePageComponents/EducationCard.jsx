@@ -4,7 +4,7 @@ import Card from "../../Components/Card";
 
 import data from "../../Assets/Datasets/aboutMePage.json";
 
-import "./EducationCard.css";
+import "./EducationCard.scss";
 
 const Tile = ({
 	dateRange = ["Jan 1970", "Jun 1970"],

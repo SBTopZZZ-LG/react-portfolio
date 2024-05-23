@@ -4,7 +4,7 @@ import Card from "../../Components/Card";
 
 import ContactPageDataset from "../../Assets/Datasets/contactPage.json";
 
-import "./FormCard.css";
+import "./FormCard.scss";
 
 const FormCard = ({ style = {} }) => {
 	const [name, setName] = useState("");

@@ -4,7 +4,7 @@ import Card from "../../Components/Card";
 
 import data from "../../Assets/Datasets/aboutMePage.json";
 
-import "./TopCertificationsCard.css";
+import "./TopCertificationsCard.scss";
 
 const Tile = ({
 	certificate_code = "code",

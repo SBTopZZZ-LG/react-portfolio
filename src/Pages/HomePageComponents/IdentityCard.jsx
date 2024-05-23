@@ -7,7 +7,7 @@ import Avatar from "../../Assets/Images/picture2.jpg";
 import Resume from "../../Assets/Files/Resume.pdf";
 import HomePageDataset from "../../Assets/Datasets/homePage.json";
 
-import "./IdentityCard.css";
+import "./IdentityCard.scss";
 
 const IdentityCard = ({
 	noObserverFadeIn = false,

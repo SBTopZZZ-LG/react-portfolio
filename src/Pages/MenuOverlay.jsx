@@ -4,7 +4,7 @@ import { VGap } from "../Components/Gap";
 
 import Logo from "../Assets/Images/logo.png";
 
-import "./MenuOverlay.css";
+import "./MenuOverlay.scss";
 
 const MenuOverlay = ({
 	paddingTop = undefined,

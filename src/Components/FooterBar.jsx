@@ -4,7 +4,7 @@ import { VGap } from "./Gap";
 
 import Logo from "../Assets/Images/logo.png";
 
-import "./FooterBar.css";
+import "./FooterBar.scss";
 
 const FooterBar = () => {
 	const [lineBreak, setLineBreak] = useState(false);

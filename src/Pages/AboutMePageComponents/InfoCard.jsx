@@ -5,7 +5,7 @@ import { HGap } from "../../Components/Gap";
 
 import data from "../../Assets/Datasets/aboutMePage.json";
 
-import "./InfoCard.css";
+import "./InfoCard.scss";
 
 const InfoCard = ({
 	style = {},

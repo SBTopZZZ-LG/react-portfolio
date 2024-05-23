@@ -8,7 +8,7 @@ import Instagram from "../../Assets/Images/Instagram.svg";
 import GitHub from "../../Assets/Images/GitHub.svg";
 import Twitter from "../../Assets/Images/Twitter-white.svg";
 
-import "./MyCard.css";
+import "./MyCard.scss";
 
 const MyCard = ({ style = {} }) => {
 	return (

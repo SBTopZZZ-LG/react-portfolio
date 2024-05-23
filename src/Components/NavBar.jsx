@@ -6,7 +6,7 @@ import {
 import { IconButton } from '@mui/material';
 import ToggleIcon from "material-ui-toggle-icon";
 
-import "./NavBar.css";
+import "./NavBar.scss";
 
 const Navbar2 = ({
 	menuState = false,

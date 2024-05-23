@@ -8,7 +8,7 @@ import Attachment from "../Components/Attachment";
 
 import data from "../Assets/Datasets/credentialsPage.js";
 
-import "./CredentialsPage.css";
+import "./CredentialsPage.scss";
 
 const Tile = ({
 	dateRange = ["Jan 1970", "Jun 1970"],

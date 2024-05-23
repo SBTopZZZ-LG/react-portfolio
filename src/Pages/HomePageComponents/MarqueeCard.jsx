@@ -6,7 +6,7 @@ import Card from "../../Components/Card";
 
 import HomePageDataset from "../../Assets/Datasets/homePage.json";
 
-import "./MarqueeCard.css";
+import "./MarqueeCard.scss";
 
 const MarqueeCard = ({
 	noObserverFadeIn = false,

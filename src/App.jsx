@@ -7,7 +7,7 @@ import FooterBar from "./Components/FooterBar";
 
 import HomePage from "./Pages/HomePage";
 
-import './App.css';
+import './App.scss';
 import MenuOverlay from "./Pages/MenuOverlay";
 import AboutMePage from "./Pages/AboutMePage";
 import WorksPage from "./Pages/WorksPage";
