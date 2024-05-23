@@ -8,7 +8,7 @@ const Sitemap = require("react-router-sitemap").default;
 function generateSitemap() {
 	return (
 		new Sitemap(router)
-			.build("https://this-is-saumitra.netlify.app/")
+			.build("https://saumitra1912.com/")
 			.save("./public/sitemap.xml")
 	);
 }
